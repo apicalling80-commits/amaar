@@ -9,7 +9,6 @@ const translations = {
         'nav-about': 'ABOUT',
         'nav-venues': 'VENUES',
         'nav-services': 'SERVICES',
-        'nav-pricing': 'PRICING',
         'nav-gallery': 'GALLERY',
         'nav-contact': 'CONTACT',
         'nav-reserve': 'RESERVE NOW',
@@ -33,15 +32,19 @@ const translations = {
         'footer-tagline': 'Where Every Celebration Becomes a Legend.',
         'footer-explore': 'EXPLORE',
         'footer-connect': 'CONNECT',
-        'footer-newsletter': 'NEWSLETTER',
-        'footer-newsletter-p': 'Subscribe for event inspiration & exclusive offers',
-        'footer-join': 'JOIN',
         'footer-rights': '© 2024 AMOR EVENTZ. ALL RIGHTS RESERVED.',
         'about-subtitle': 'ABOUT US',
         'about-title': 'Every event tells a story <br><span class="txt-gold" style="white-space: nowrap;">we make yours unforgettable.</span>',
         'about-description': 'Amor Eventz is a full-service event management company established in 2025, born out of a passion for creating unforgettable celebrations filled with love, elegance, and seamless execution.',
         'about-btn': 'KNOW MORE',
         'crest-subtitle': 'EVENT MANAGEMENT \u2022 MUMBAI, INDIA',
+        'footer-newsletter': 'Join our newsletter',
+        'footer-newsletter-p': 'You will never miss our podcasts, latest news etc. Our newsletter is once a week, every Thursday',
+        'footer-join': 'Join',
+        'footer-brand-desc': 'You will never miss our podcasts, latest news etc. Our updates is once a week, every Thursday',
+        'footer-support': 'SUPPORT',
+        'footer-privacy': 'Privacy Policy',
+        'footer-terms': 'Terms of Service',
         'services-subtitle': 'What We Offer',
         'services-title': 'Our Services',
         'srv-corp-h': 'Corporate Events',
@@ -76,7 +79,6 @@ const translations = {
         'nav-about': 'हमारे बारे में',
         'nav-venues': 'स्थान',
         'nav-services': 'सेवाएं',
-        'nav-pricing': 'मूल्य निर्धारण',
         'nav-gallery': 'गैलरी',
         'nav-contact': 'संपर्क',
         'nav-reserve': 'बुक करें',
@@ -100,14 +102,19 @@ const translations = {
         'footer-tagline': 'जहाँ हर उत्सव एक महान गाथा बन जाता है।',
         'footer-explore': 'अन्वेषण करें',
         'footer-connect': 'जुड़ें',
-        'footer-newsletter': 'न्यूज़लेटर',
-        'footer-newsletter-p': 'इवेंट प्रेरणा और विशेष ऑफ़र के लिए सब्सक्राइब करें',
-        'footer-join': 'शामिल हों',
         'footer-rights': '© 2024 अमोर इवेंट्स। सर्वाधिकार सुरक्षित।',
         'about-subtitle': 'हमारे बारे में',
         'about-title': 'हर कार्यक्रम एक कहानी कहता है <br><span class="txt-gold" style="white-space: nowrap;">हम आपकी कहानी को अविस्मरणीय बनाते हैं।</span>',
         'about-description': 'अमोर इवेंट्स 2025 में स्थापित एक पूर्ण-सेवा इवेंट मैनेजमेंट कंपनी है, जिसका जन्म प्यार, लालित्य और निर्बाध निष्पादन से भरे अविस्मरणीय उत्सव बनाने के जुनून से हुआ है।',
         'about-btn': 'अधिक जानें',
+        'crest-subtitle': 'इवेंट मैनेजमेंट • मुंबई, भारत',
+        'footer-newsletter': 'हमारे न्यूज़लेटर से जुड़ें',
+        'footer-newsletter-p': 'आप हमारे पॉडकास्ट, ताज़ा खबरें आदि कभी नहीं छोड़ेंगे। हमारा न्यूज़लेटर सप्ताह में एक बार, हर गुरुवार को आता है',
+        'footer-join': 'जुड़ें',
+        'footer-brand-desc': 'आप हमारे पॉडकास्ट, ताज़ा खबरें आदि कभी नहीं छोड़ेंगे। हमारे अपडेट सप्ताह में एक बार, हर गुरुवार को आते हैं',
+        'footer-support': 'सहायता',
+        'footer-privacy': 'गोपनीयता नीति',
+        'footer-terms': 'सेवा की शर्तें',
         'services-subtitle': 'हम क्या प्रदान करते हैं',
         'services-title': 'हमारी सेवाएं',
         'srv-corp-h': 'कॉर्पोरेट कार्यक्रम',
@@ -300,4 +307,62 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 6. GALLERY FILTERING
+    const galleryFilters = document.querySelectorAll('.gallery-filter');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    if (galleryFilters.length > 0 && galleryItems.length > 0) {
+        galleryFilters.forEach(filter => {
+            filter.addEventListener('click', () => {
+                // Update Active State
+                galleryFilters.forEach(f => f.classList.remove('active'));
+                filter.classList.add('active');
+
+                const category = filter.textContent.trim();
+
+                galleryItems.forEach(item => {
+                    const itemCategory = item.getAttribute('data-category');
+                    if (category === 'ALL' || itemCategory === category) {
+                        item.style.display = ''; // Restore default grid/block display
+                        setTimeout(() => {
+                            item.classList.remove('hidden');
+                        }, 10);
+                    } else {
+                        item.classList.add('hidden');
+                        setTimeout(() => {
+                            if (item.classList.contains('hidden')) {
+                                item.style.display = 'none';
+                            }
+                        }, 600); // Match transition duration
+                    }
+                });
+            });
+        });
+    }
+
+    // 7. CONTACT FORM ENHANCEMENT
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = contactForm.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            
+            btn.innerHTML = 'SENDING...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                btn.innerHTML = 'ENQUIRY SENT ✓';
+                btn.style.backgroundColor = '#28a745';
+                contactForm.reset();
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                    btn.style.backgroundColor = '';
+                }, 3000);
+            }, 1500);
+        });
+    }
 });

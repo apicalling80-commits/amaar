@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services & Curation | Amor Eventz</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:wght@400;600&family=Cinzel:wght@400;500&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <!-- Fonts Overhaul -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     
     <meta name="description" content="Explore our bespoke event services: from gourmet catering and floral design to royal wedding planning and corporate event curation.">
     <link rel="stylesheet" href="styles.css">
@@ -24,7 +27,6 @@
                 <li><a href="about.html" data-i18n="nav-about">ABOUT</a></li>
                 <li><a href="venues.html" data-i18n="nav-venues">VENUES</a></li>
                 <li><a href="services.html" class="active" data-i18n="nav-services">SERVICES</a></li>
-                <li><a href="pricing.html" data-i18n="nav-pricing">PRICING</a></li>
                 <li><a href="gallery.html" data-i18n="nav-gallery">GALLERY</a></li>
                 <li><a href="contact.html" data-i18n="nav-contact">CONTACT</a></li>
             </ul>
@@ -39,119 +41,163 @@
         </div>
     </nav>
 
-    <!-- HEADER -->
-    <header class="page-header" style="background-image: linear-gradient(rgba(59, 10, 30, 0.75), rgba(59, 10, 30, 0.75)), url('assets/catering-wedding.jpg');">
-        <div class="container text-center reveal">
-            <p class="txt-ui txt-gold">ART OF HOSTING</p>
-            <h1 class="txt-hero" style="font-size:72px;" data-i18n="nav-services">Our Services</h1>
-            <div class="divider-center" style="margin: 30px auto; width: 80px;"></div>
-        </div>
-    </header>
 
-    <!-- INTRO -->
-    <section class="service-intro section-light reveal">
+    <!-- SERVICES CATALOG -->
+    <section class="venues-catalog" style="padding-top: 160px;"> <!-- Reuse class for consistency -->
         <div class="container">
-            <h2 class="txt-hero" style="font-size:48px; margin-bottom:20px;">Bespoke Curation for Every Milestone</h2>
-            <p class="txt-body" style="max-width:700px; margin:0 auto; font-size:18px;">From the initial concept to the final toast, our team of experts provides end-to-end event management that prioritizes your vision and exceeds expectations.</p>
+            <!-- HEADER -->
+            <div class="text-center" style="margin-bottom: 80px;">
+                <p class="txt-ui txt-gold" style="letter-spacing: 5px;">TAILORED FOR YOU</p>
+                <h1 class="txt-hero" style="font-size: 64px; text-transform: uppercase;">Comprehensive Event Solutions</h1>
+                <p class="txt-body" style="max-width: 800px; margin: 20px auto 0; font-size: 18px; opacity: 0.8;">From concept to completion, we handle every aspect of your event with care, creativity, and professionalism.</p>
+                <div class="divider-center" style="margin: 35px auto; width: 60px;"></div>
+            </div>
+
+            <!-- SERVICE GRID -->
+            <div class="venue-grid-new">
+                <!-- Wedding Planning -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80" alt="Wedding Planning"></div>
+                    <div class="venue-card-content">
+                        <h3>Wedding Planning</h3>
+                        <p>Your wedding is the most cherished day of your life. We craft every detail — from the decor and flowers to the venue and catering — to mirror your love story perfectly. With Amor Eventz, your dream wedding becomes a breathtaking reality.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+
+                <!-- Pre-Wedding Events -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80" alt="Pre-Wedding Events"></div>
+                    <div class="venue-card-content">
+                        <h3>Pre-Wedding Events</h3>
+                        <p>Mehendi, Sangeet, Haldi, or an intimate engagement — we plan and manage every pre-wedding function with creativity and flair, ensuring each celebration is as beautiful as the next.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+
+                <!-- Corporate Events -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80" alt="Corporate Events"></div>
+                    <div class="venue-card-content">
+                        <h3>Corporate Events</h3>
+                        <p>From annual meetings and product launches to award nights and team outings, we deliver seamless corporate events that reflect your brand's vision and leave a lasting impression on your guests.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+
+                <!-- Birthday Celebrations -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1530103043960-ef38714abb15?w=800&q=80" alt="Birthday Celebrations"></div>
+                    <div class="venue-card-content">
+                        <h3>Birthday Celebrations</h3>
+                        <p>Whether it's a first birthday or a milestone 50th, our team creates personalized birthday celebrations filled with joy, stunning decor, and unforgettable moments tailored to your personality.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+
+                <!-- Anniversary Celebrations -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&q=80" alt="Anniversary Celebrations"></div>
+                    <div class="venue-card-content">
+                        <h3>Anniversary Celebrations</h3>
+                        <p>Celebrate years of love with an anniversary event as special as your bond. We curate intimate dinners, grand parties, and everything in between — designed to honor your unique journey together.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+
+                <!-- Social Gatherings -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=80" alt="Social Gatherings"></div>
+                    <div class="venue-card-content">
+                        <h3>Social Gatherings</h3>
+                        <p>House warmings, baby showers, kitty parties, reunion dinners — no gathering is too big or too small for us. We bring warmth, elegance, and precision to every social occasion you host.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+
+                <!-- Licensing -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80" alt="Licensing"></div>
+                    <div class="venue-card-content">
+                        <h3>Licensing</h3>
+                        <p>Navigating the complexities of event legalities with ease. We handle all necessary permissions, alcohol licenses, and local clearances, ensuring your celebration remains seamless and compliant.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+
+                <!-- Food Catering -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=800&q=80" alt="Food Catering"></div>
+                    <div class="venue-card-content">
+                        <h3>Food Catering services</h3>
+                        <p>A gastronomic journey tailored to your palate. Our master chefs curate exquisite menus featuring global cuisines, live culinary theatrics, and bespoke dining concepts that elevate your event's flavor profile.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+
+                <!-- Photographer -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=800&q=80" alt="Photographer"></div>
+                    <div class="venue-card-content">
+                        <h3>Photographer</h3>
+                        <p>Preserving your legacy through the cinematic lens. Our elite team captures the raw emotion and timeless elegance of your celebration, turning fleeting moments into cherished heirlooms.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+
+                <!-- Makeup Artist -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&q=80" alt="Makeup Artist"></div>
+                    <div class="venue-card-content">
+                        <h3>Makeup artist</h3>
+                        <p>Radiance redefined for your most precious moments. Our celebrity-tier artists use premium artistry to enhance your natural beauty, ensuring you look breathtaking under every spotlight.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- SERVICE GRID -->
-    <section class="section-light" style="padding-bottom:120px;">
-        <div class="container service-grid">
-            <div class="service-card-luxury reveal">
-                <div class="service-icon-wrap">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M2 22C2 17.5817 5.58172 14 10 14C14.4183 14 18 17.5817 18 22"></path>
-                        <circle cx="10" cy="7" r="5"></circle>
-                        <path d="M18 10L21 7L18 4"></path>
-                    </svg>
-                </div>
-                <h3>ROYAL WEDDINGS</h3>
-                <p>Complete matrimonial curation including decor, rituals management, and guest experiences designed for lasting impressions.</p>
-            </div>
-            
-            <div class="service-card-luxury reveal delay-1">
-                <div class="service-icon-wrap">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <rect x="2" y="7" width="20" height="14" rx="2"></rect>
-                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                    </svg>
-                </div>
-                <h3>CORPORATE GALAS</h3>
-                <p>Sophisticated settings for annual day celebrations, award ceremonies, and high-stakes networking events with full AV support.</p>
-            </div>
+    <!-- NARRATIVE FOOTER -->
+    <footer class="narrative-footer">
 
-            <div class="service-card-luxury reveal delay-2">
-                <div class="service-icon-wrap">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
-                    </svg>
-                </div>
-                <h3>PRIVATE SOIRÉES</h3>
-                <p>Intimate birthday celebrations, anniversaries, and family gatherings treated with the same meticulous care as our grand ballrooms.</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- CATERING HIGHLIGHT -->
-    <section class="catering-highlight reveal">
-        <div class="container">
-            <div style="display:grid; grid-template-columns:1fr 1.2fr; gap:80px; align-items:center;">
-                <div style="position:relative;">
-                    <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=800&q=80" alt="Gourmet Catering" style="width:100%; height:500px; object-fit:cover; border:1px solid rgba(212,175,106,0.5);">
+        <div class="footer-brand-links">
+            <div class="container footer-links-grid">
+                <div class="footer-brand-info">
+                    <img src="assets/logo.png" alt="Amor Eventz" style="height: 80px; width: auto; margin-bottom: 20px;">
+                    <p data-i18n="footer-brand-desc">You will never miss our podcasts, latest news etc. Our updates is once a week, every Thursday</p>
+                    <div class="footer-social-new">
+                        <a href="https://facebook.com/amoreventz" target="_blank" class="social-circle"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/amoreventz" target="_blank" class="social-circle"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@amoreventz" target="_blank" class="social-circle"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://youtube.com/amoreventz" target="_blank" class="social-circle"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
-                <div>
-                    <p class="txt-ui txt-gold" style="margin-bottom:20px;">CULINARY EXCELLENCE</p>
-                    <h2 class="txt-hero" style="font-size:56px; margin-bottom:40px;">A Symphony of Flavours</h2>
-                    <p class="txt-body" style="font-size:18px; line-height:1.9; opacity:0.8; margin-bottom:30px;">Our in-house culinary masters craft artisanal menus that blend regional traditions with global flair. From grand buffet spreads to intimate plated dinners, we ensure your guests talk about the meal for years to come.</p>
-                    <ul style="list-style:none; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:16px;">
-                        <li style="display:flex; align-items:center; gap:12px; font-family:'Cinzel'; font-size:11px; color:var(--clr-secondary);"><span style="width:6px; height:6px; background:var(--clr-secondary); border-radius:50%;"></span> LIVE COUNTERS</li>
-                        <li style="display:flex; align-items:center; gap:12px; font-family:'Cinzel'; font-size:11px; color:var(--clr-secondary);"><span style="width:6px; height:6px; background:var(--clr-secondary); border-radius:50%;"></span> GLOBAL CUISINES</li>
-                        <li style="display:flex; align-items:center; gap:12px; font-family:'Cinzel'; font-size:11px; color:var(--clr-secondary);"><span style="width:6px; height:6px; background:var(--clr-secondary); border-radius:50%;"></span> ARTISANAL DESSERTS</li>
-                        <li style="display:flex; align-items:center; gap:12px; font-family:'Cinzel'; font-size:11px; color:var(--clr-secondary);"><span style="width:6px; height:6px; background:var(--clr-secondary); border-radius:50%;"></span> MOCKTAIL BARS</li>
+                <div class="footer-col">
+                    <h4 data-i18n="footer-explore">EXPLORE</h4>
+                    <ul>
+                        <li><a href="about.html" data-i18n="nav-about">About Us</a></li>
+                        <li><a href="venues.html" data-i18n="nav-venues">Our Venues</a></li>
+                        <li><a href="services.html" data-i18n="nav-services">Services</a></li>
+                        <li><a href="gallery.html" data-i18n="nav-gallery">Gallery</a></li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-brand">
-                <img src="assets/logo.png" alt="Amor Eventz" style="height: 120px; width: auto; margin-bottom: 25px;">
-                <p data-i18n="footer-tagline">Where Every Celebration Becomes a Legend.</p>
-            </div>
-            <div class="footer-links">
-                <h4 data-i18n="footer-explore">EXPLORE</h4>
-                <ul>
-                    <li><a href="about.html" data-i18n="nav-about">ABOUT US</a></li>
-                    <li><a href="venues.html" data-i18n="nav-venues">OUR VENUES</a></li>
-                    <li><a href="services.html" data-i18n="nav-services">SERVICES</a></li>
-                    <li><a href="gallery.html" data-i18n="nav-gallery">GALLERY</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <h4 data-i18n="footer-connect">CONNECT</h4>
-                <div class="social-icons">
-                    <a href="https://instagram.com/amoreventz" target="_blank" class="social-icon">IN</a>
-                    <a href="https://facebook.com/amoreventz" target="_blank" class="social-icon">FB</a>
-                    <a href="https://youtube.com/amoreventz" target="_blank" class="social-icon">YT</a>
-                    <a href="https://pinterest.com/amoreventz" target="_blank" class="social-icon">PT</a>
+                <div class="footer-col">
+                    <h4 data-i18n="footer-support">SUPPORT</h4>
+                    <ul>
+                        <li><a href="contact.html" data-i18n="nav-contact">Contact Us</a></li>
+                        <li><a href="#" data-i18n="footer-privacy">Privacy Policy</a></li>
+                        <li><a href="#" data-i18n="footer-terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <!-- Placeholder/Empty for layout -->
                 </div>
             </div>
-            <div class="footer-newsletter">
-                <h4 data-i18n="footer-newsletter">NEWSLETTER</h4>
-                <p style="font-size:13px; color:#FAF3EC; opacity:0.7; margin-bottom:12px;" data-i18n="footer-newsletter-p">Subscribe for event inspiration & exclusive offers</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address">
-                    <button type="submit" data-i18n="footer-join">JOIN</button>
-                </form>
-            </div>
         </div>
-        <div class="footer-bottom">
-            <p data-i18n="footer-rights">&copy; 2024 AMOR EVENTZ. ALL RIGHTS RESERVED.</p>
+        <div class="footer-bottom-new">
+            <p>&copy; 2024 AMOR EVENTZ. ALL RIGHTS RESERVED.</p>
         </div>
     </footer>
 

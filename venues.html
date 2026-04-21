@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Luxury Venues | Amor Eventz</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Playfair+Display:wght@400;600&family=Cinzel:wght@400;500&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <!-- Fonts Overhaul -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     
     <meta name="description" content="Explore our three signature venues: The Grand Ballroom, Peacock Terrace, and Ivory Lounge. Spaces designed for royal weddings and premium corporate events.">
     <link rel="stylesheet" href="styles.css">
@@ -24,7 +27,6 @@
                 <li><a href="about.html" data-i18n="nav-about">ABOUT</a></li>
                 <li><a href="venues.html" class="active" data-i18n="nav-venues">VENUES</a></li>
                 <li><a href="services.html" data-i18n="nav-services">SERVICES</a></li>
-                <li><a href="pricing.html" data-i18n="nav-pricing">PRICING</a></li>
                 <li><a href="gallery.html" data-i18n="nav-gallery">GALLERY</a></li>
                 <li><a href="contact.html" data-i18n="nav-contact">CONTACT</a></li>
             </ul>
@@ -39,161 +41,322 @@
         </div>
     </nav>
 
-    <!-- HEADER -->
-    <header class="page-header" style="background-image: linear-gradient(rgba(59, 10, 30, 0.75), rgba(59, 10, 30, 0.75)), url('assets/indian-stage-with-neon-light-night.jpg');">
-        <div class="container text-center reveal">
-            <p class="txt-ui txt-gold">SIGNATURE SPACES</p>
-            <h1 class="txt-hero" style="font-size:72px;" data-i18n="nav-venues">Our Venues</h1>
-            <div class="divider-center" style="margin: 30px auto; width: 80px;"></div>
-        </div>
-    </header>
+    <!-- VENUE CATALOG -->
+    <section class="venues-catalog">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 80px;">
+                <p class="txt-ui txt-gold" style="letter-spacing: 5px;">EXCLUSIVE SELECTION</p>
+                <h1 class="txt-hero" style="font-size: 64px; text-transform: uppercase;">Our Signature Venues</h1>
+                <div class="divider-center" style="margin: 25px auto; width: 60px;"></div>
+            </div>
+            
+            <!-- CATEGORY 1: 5-STAR HOTELS -->
+            <div class="category-header">
+                <h2>5-Star luxury Hotels</h2>
+            </div>
+            <div class="venue-grid-new">
+                <!-- Taj Santacruz -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="assets/hotel_taj.png" alt="Taj Santacruz"></div>
+                    <div class="venue-card-content">
+                        <h3>Taj Santacruz</h3>
+                        <p>Luxury hotel with large, magnificent banquet spaces located near the airport.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- Sahara Star -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="assets/hotel_sahara.png" alt="Sahara Star"></div>
+                    <div class="venue-card-content">
+                        <h3>Sahara Star</h3>
+                        <p>Premium 5-star hotel offering state-of-the-art event spaces and grand ambiance.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- The Orchid -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="assets/hotel_orchid.png" alt="The Orchid"></div>
+                    <div class="venue-card-content">
+                        <h3>The Orchid</h3>
+                        <p>Eco-friendly luxury hotel with multiple banquets and majestic ballrooms.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- Holiday Inn -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80" alt="Holiday Inn"></div>
+                    <div class="venue-card-content">
+                        <h3>Holiday Inn Mumbai</h3>
+                        <p>Full-service hotel with versatile meeting rooms and elegant banquet facilities.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- ITC Grand Central -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="assets/hotel_itc.png" alt="ITC Grand Central"></div>
+                    <div class="venue-card-content">
+                        <h3>ITC Grand Central</h3>
+                        <p>Heritage luxury with timeless ballrooms in the heart of Mumbai.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- Radisson Blu -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="assets/hotel_radisson.png" alt="Radisson Blu"></div>
+                    <div class="venue-card-content">
+                        <h3>Radisson Blu Airport</h3>
+                        <p>Large hotel banquets and modern meeting halls for corporate and social events.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- Hilton -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="assets/hotel_hilton.png" alt="Hilton Airport"></div>
+                    <div class="venue-card-content">
+                        <h3>Hilton Mumbai Airport</h3>
+                        <p>Spacious banquet and function rooms with premium international standards.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- Westin Powai -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="assets/hotel_westin.png" alt="Westin Powai"></div>
+                    <div class="venue-card-content">
+                        <h3>Westin Powai Lake</h3>
+                        <p>High-end hotel with large ballroom spaces and stunning lake views.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- Marriott Courtyard -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="assets/hotel_marriott.png" alt="Courtyard by Marriott"></div>
+                    <div class="venue-card-content">
+                        <h3>Courtyard by Marriott</h3>
+                        <p>Modern luxury banquet and meeting rooms perfect for weddings and corporate gatherings.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- Fariyas Hotel -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1551882547-ff43c61f3c33?w=800&q=80" alt="Fariyas Hotel"></div>
+                    <div class="venue-card-content">
+                        <h3>Fariyas Hotel Mumbai</h3>
+                        <p>Established luxury hotel with elegant banquet halls and premium social event capabilities.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- Fairfield by Marriott -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&q=80" alt="Fairfield by Marriott"></div>
+                    <div class="venue-card-content">
+                        <h3>Fairfield by Marriott</h3>
+                        <p>Upscale hotel at Mumbai International Airport with modern event facilities and catering.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- Four Points by Sheraton -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80" alt="Four Points by Sheraton"></div>
+                    <div class="venue-card-content">
+                        <h3>Four Points by Sheraton</h3>
+                        <p>Premium hotel in Vashi featuring multiple grand halls and specialized event planning.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+            </div>
 
-    <!-- VENUE 1: GRAND BALLROOM -->
-    <section class="venue-detail-section reveal">
-        <div class="container venue-detail-grid">
-            <div class="venue-image-stack">
-                <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=80" alt="Grand Ballroom Decoration">
+            <!-- CATEGORY 2: 4-STAR & BOUTIQUE -->
+            <div class="category-header">
+                <h2>4-Star & Boutique Venues</h2>
             </div>
-            <div>
-                <p class="txt-ui txt-gold" style="margin-bottom:12px;">THE FLAGSHIP</p>
-                <h2 style="font-size:48px; margin-bottom:24px;">The Grand Ballroom</h2>
-                <p class="txt-body" style="font-size:16px; line-height:1.7;">Our crown jewel, designed for the most magnificent milestones. Featuring soaring hand-plastered ceilings, artisanal gold-leaf detailing, and state-of-the-art acoustics, this space transforms every celebration into a royal gala.</p>
-                
-                <div class="venue-specs">
-                    <div class="spec-item">
-                        <h4>CAPACITY</h4>
-                        <p>500 - 800 Guests</p>
-                    </div>
-                    <div class="spec-item">
-                        <h4>IDEAL FOR</h4>
-                        <p>Weddings & Receptions</p>
-                    </div>
-                    <div class="spec-item">
-                        <h4>LIGHTING</h4>
-                        <p>Custom Ambient Control</p>
-                    </div>
-                    <div class="spec-item">
-                        <h4>PARKING</h4>
-                        <p>Dedicated Valet Zone</p>
+            <div class="venue-grid-new">
+                <!-- Taj The Trees -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80" alt="Taj The Trees"></div>
+                    <div class="venue-card-content">
+                        <h3>Taj The Trees</h3>
+                        <p>Stylish boutique hotel with modern banquet and meeting facilities in Vikhroli.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
                     </div>
                 </div>
-                <div style="margin-top:40px;">
-                    <a href="contact.html" class="btn btn-outline" style="border-radius:0;">PLAN YOUR WEDDING</a>
+                <!-- Grand Peninsula -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&q=80" alt="Grand Peninsula"></div>
+                    <div class="venue-card-content">
+                        <h3>Grand Peninsula</h3>
+                        <p>Premium hotel option with versatile event and banquet spaces.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- Goldfinch -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?w=800&q=80" alt="Goldfinch Hotel"></div>
+                    <div class="venue-card-content">
+                        <h3>Goldfinch Hotel</h3>
+                        <p>Boutique hotel experience with intimate and elegant event venues in the suburbs.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- Meluha The Fern -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1544124499-58912cbddaad?w=800&q=80" alt="Meluha The Fern"></div>
+                    <div class="venue-card-content">
+                        <h3>Meluha The Fern</h3>
+                        <p>Upscale Ecotel hotel with magnificent banquet facilities for high-end celebrations.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
                 </div>
             </div>
+
+            <!-- CATEGORY 3: STANDALONE BANQUETS -->
+            <div class="category-header">
+                <h2>Banquets & Event Halls</h2>
+            </div>
+            <div class="venue-grid-new">
+                <!-- NESCO -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="assets/hotel_nesco.png" alt="NESCO Center"></div>
+                    <div class="venue-card-content">
+                        <h3>NESCO Center</h3>
+                        <p>Mumbai's premier multi-purpose venue for massive exhibitions and events.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- Blue Sea -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1519225497282-14ad14013098?w=800&q=80" alt="Blue Sea Mumbai"></div>
+                    <div class="venue-card-content">
+                        <h3>Blue Sea Mumbai</h3>
+                        <p>Popular sea-facing banquet hall suitable for elegant weddings and gatherings.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- Jade Luxury -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=80" alt="Jade Luxury Banquets"></div>
+                    <div class="venue-card-content">
+                        <h3>Jade Luxury Banquets</h3>
+                        <p>High-end standalone banquet venue known for its premium services.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- Flags Banquet -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&q=80" alt="Flag’s Banquet"></div>
+                    <div class="venue-card-content">
+                        <h3>Flag’s Banquet</h3>
+                        <p>Versatile event hall with multiple locations across Mumbai including Andheri and Malad.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- JK Banquets -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=800&q=80" alt="JK Banquets"></div>
+                    <div class="venue-card-content">
+                        <h3>JK Banquets</h3>
+                        <p>Well-established banquet space perfect for traditional and modern celebrations.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- Sai Palace -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=800&q=80" alt="Sai Palace"></div>
+                    <div class="venue-card-content">
+                        <h3>Sai Palace Banquet</h3>
+                        <p>Dedicated banquet venue offering comprehensive event management services.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- Royal Halls NSCI -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80" alt="Royal Halls NSCI"></div>
+                    <div class="venue-card-content">
+                        <h3>Royal Halls NSCI</h3>
+                        <p>Luxurious banquet hall inside NSCI Worli with versatile indoor event spaces.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- Dome SVP -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1514525253361-bee8a48790c3?w=800&q=80" alt="Dome SVP Stadium"></div>
+                    <div class="venue-card-content">
+                        <h3>Dome SVP Stadium</h3>
+                        <p>Massive indoor stadium venue (NSCI Dome) for large-scale corporate and grand events.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- Kohinoor Park -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1519225497282-14ad14013098?w=800&q=80" alt="Kohinoor Park"></div>
+                    <div class="venue-card-content">
+                        <h3>Kohinoor Park Banquet</h3>
+                        <p>Well-rated banquet hall near Dadar ideal for traditional functions and social events.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- Suryavanshi -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&q=80" alt="Suryavanshi Sabhagruha"></div>
+                    <div class="venue-card-content">
+                        <h3>Suryavanshi Sabhagruha</h3>
+                        <p>Traditional and spacious banquet hall known for cultural and cinematic events.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+                <!-- Synergy -->
+                <div class="venue-card-new">
+                    <div class="venue-card-img"><img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=80" alt="Synergy Banquets"></div>
+                    <div class="venue-card-content">
+                        <h3>Synergy Banquets</h3>
+                        <p>Modern event and banquet hall in Vashi, perfect for corporate and wedding bookings.</p>
+                        <a href="contact.html" class="venue-link-new">ENQUIRE NOW →</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- VENUE 2: PEACOCK TERRACE -->
-    <section class="venue-detail-section section-light reveal">
-        <div class="container venue-detail-grid">
-            <div style="order: 2;">
-                <div class="venue-image-stack">
-                    <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&q=80" alt="Peacock Terrace">
-                </div>
-            </div>
-            <div style="order: 1;">
-                <p class="txt-ui txt-gold" style="margin-bottom:12px;">INTIMATE & STYLISH</p>
-                <h2 style="font-size:48px; margin-bottom:24px;">Peacock Terrace</h2>
-                <p class="txt-body" style="font-size:16px; line-height:1.7;">An open-concept lounge that blends modern minimalism with heritage accents. Perfect for high-end cocktail soirées or corporate networking events that require a sophisticated breeze.</p>
-                
-                <div class="venue-specs">
-                    <div class="spec-item" style="border-color: #333;">
-                        <h4>CAPACITY</h4>
-                        <p>150 - 250 Guests</p>
-                    </div>
-                    <div class="spec-item" style="border-color: #333;">
-                        <h4>IDEAL FOR</h4>
-                        <p>Receptions & Socials</p>
-                    </div>
-                    <div class="spec-item" style="border-color: #333;">
-                        <h4>VIBE</h4>
-                        <p>Open-Air Luxury</p>
-                    </div>
-                    <div class="spec-item" style="border-color: #333;">
-                        <h4>CATERING</h4>
-                        <p>Live Tandoor & Grill</p>
-                    </div>
-                </div>
-                <div style="margin-top:40px;">
-                    <a href="contact.html" class="btn btn-primary" style="border-radius:0;">BOOK THE TERRACE</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- NARRATIVE FOOTER -->
+    <footer class="narrative-footer">
 
-    <!-- VENUE 3: IVORY LOUNGE -->
-    <section class="venue-detail-section reveal">
-        <div class="container venue-detail-grid">
-            <div class="venue-image-stack">
-                <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80" alt="Ivory Lounge">
-            </div>
-            <div>
-                <p class="txt-ui txt-gold" style="margin-bottom:12px;">BESPOKE & PRIVATE</p>
-                <h2 style="font-size:48px; margin-bottom:24px;">Ivory Lounge</h2>
-                <p class="txt-body" style="font-size:16px; line-height:1.7;">Minimalist, elegant, and perfectly sized for private family ceremonies or corporate board meetings. The Ivory Lounge offers complete privacy and a distraction-free sanctuary for your most focused moments.</p>
-                
-                <div class="venue-specs">
-                    <div class="spec-item">
-                        <h4>CAPACITY</h4>
-                        <p>50 - 100 Guests</p>
-                    </div>
-                    <div class="spec-item">
-                        <h4>IDEAL FOR</h4>
-                        <p>Private Dinners & Meetings</p>
-                    </div>
-                    <div class="spec-item">
-                        <h4>TECH</h4>
-                        <p>HD Audio-Visual Ready</p>
-                    </div>
-                    <div class="spec-item">
-                        <h4>ACCESS</h4>
-                        <p>Private Lift Entrance</p>
-                    </div>
-                </div>
-                <div style="margin-top:40px;">
-                    <a href="contact.html" class="btn btn-outline" style="border-radius:0;">START ENQUIRY</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-brand">
-                <img src="assets/logo.png" alt="Amor Eventz" style="height: 120px; width: auto; margin-bottom: 25px;">
-                <p data-i18n="footer-tagline">Where Every Celebration Becomes a Legend.</p>
-            </div>
-            <div class="footer-links">
-                <h4 data-i18n="footer-explore">EXPLORE</h4>
-                <ul>
-                    <li><a href="about.html" data-i18n="nav-about">ABOUT US</a></li>
-                    <li><a href="venues.html" data-i18n="nav-venues">OUR VENUES</a></li>
-                    <li><a href="services.html" data-i18n="nav-services">SERVICES</a></li>
-                    <li><a href="gallery.html" data-i18n="nav-gallery">GALLERY</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <h4 data-i18n="footer-connect">CONNECT</h4>
-                <div class="social-icons">
-                    <a href="https://instagram.com/amoreventz" target="_blank" class="social-icon">IN</a>
-                    <a href="https://facebook.com/amoreventz" target="_blank" class="social-icon">FB</a>
-                    <a href="https://youtube.com/amoreventz" target="_blank" class="social-icon">YT</a>
-                    <a href="https://pinterest.com/amoreventz" target="_blank" class="social-icon">PT</a>
+        <div class="footer-brand-links">
+            <div class="container footer-links-grid">
+                <div class="footer-brand-info">
+                    <img src="assets/logo.png" alt="Amor Eventz" style="height: 80px; width: auto; margin-bottom: 20px;">
+                    <p data-i18n="footer-brand-desc">You will never miss our podcasts, latest news etc. Our updates is once a week, every Thursday</p>
+                    <div class="footer-social-new">
+                        <a href="https://facebook.com/amoreventz" target="_blank" class="social-circle"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/amoreventz" target="_blank" class="social-circle"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@amoreventz" target="_blank" class="social-circle"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://youtube.com/amoreventz" target="_blank" class="social-circle"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer-explore">EXPLORE</h4>
+                    <ul>
+                        <li><a href="about.html" data-i18n="nav-about">About Us</a></li>
+                        <li><a href="venues.html" data-i18n="nav-venues">Our Venues</a></li>
+                        <li><a href="services.html" data-i18n="nav-services">Services</a></li>
+                        <li><a href="gallery.html" data-i18n="nav-gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer-support">SUPPORT</h4>
+                    <ul>
+                        <li><a href="contact.html" data-i18n="nav-contact">Contact Us</a></li>
+                        <li><a href="#" data-i18n="footer-privacy">Privacy Policy</a></li>
+                        <li><a href="#" data-i18n="footer-terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <!-- Placeholder/Empty for layout -->
                 </div>
             </div>
-            <div class="footer-newsletter">
-                <h4 data-i18n="footer-newsletter">NEWSLETTER</h4>
-                <p style="font-size:13px; color:#FAF3EC; opacity:0.7; margin-bottom:12px;" data-i18n="footer-newsletter-p">Subscribe for event inspiration & exclusive offers</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address">
-                    <button type="submit" data-i18n="footer-join">JOIN</button>
-                </form>
-            </div>
         </div>
-        <div class="footer-bottom">
-            <p data-i18n="footer-rights">&copy; 2024 AMOR EVENTZ. ALL RIGHTS RESERVED.</p>
+        <div class="footer-bottom-new">
+            <p>&copy; 2024 AMOR EVENTZ. ALL RIGHTS RESERVED.</p>
         </div>
     </footer>
 
