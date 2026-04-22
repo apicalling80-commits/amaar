@@ -3715,6 +3715,17 @@ body.gallery-page .section-light {
         font-size: 9px !important;
         opacity: 0.5;
     }
+
+    /* Why Choose Us Mobile Reordering */
+    .wave-step.down .wave-info {
+        order: -1 !important;
+        margin-top: 0 !important;
+        margin-bottom: 20px !important;
+    }
+
+    .wave-step.up .wave-info {
+        margin-bottom: 20px !important;
+    }
 }
 
 .hero-fade-in {
