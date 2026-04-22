@@ -2053,24 +2053,25 @@ img {
     .services-mosaic {
         display: grid !important;
         grid-template-columns: 1fr 1.8fr 1fr !important;
-        gap: 10px !important;
-        width: 100% !important;
+        gap: 8px !important;
+        width: calc(100% - 20px) !important;
         max-width: 100% !important;
-        margin: 40px 0 !important;
+        margin: 30px auto !important;
         align-items: center !important;
+        padding: 0 5px !important;
     }
 
     .mosaic-col {
         width: 100% !important;
         height: auto !important;
-        gap: 10px !important;
+        gap: 8px !important;
         transform: none !important;
         opacity: 1 !important;
     }
 
     .mosaic-item-center {
         width: 100% !important;
-        height: 380px !important;
+        height: 320px !important;
         min-height: auto !important;
         transform: none !important;
         opacity: 1 !important;
@@ -2079,7 +2080,7 @@ img {
 
     .mosaic-item {
         width: 100% !important;
-        height: 185px !important;
+        height: 155px !important;
         transform: none !important;
         opacity: 1 !important;
         border-radius: 10px !important;
