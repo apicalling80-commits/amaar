@@ -2087,40 +2087,36 @@ img {
     }
 
     .mosaic-name {
-        font-size: 10px !important;
-        font-weight: 500 !important;
+        font-size: 9.5px !important;
+        font-weight: 600 !important;
         letter-spacing: 1px !important;
         text-align: center !important;
-        padding: 8px 5px !important;
+        padding: 6px 12px !important;
         white-space: normal !important;
         color: #ffffff !important;
-        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) !important;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4) !important;
+        background: rgba(179, 146, 68, 0.3) !important;
+        /* Brand Gold Tinted Glass */
+        backdrop-filter: blur(12px) !important;
+        -webkit-backdrop-filter: blur(12px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.25) !important;
+        border-radius: 20px !important;
+        width: fit-content !important;
+        max-width: 90% !important;
+        display: inline-block !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
     }
 
     .mosaic-overlay {
-        padding: 0 !important;
-        justify-content: flex-end !important;
-        align-items: stretch !important;
+        padding: 15px !important;
+        justify-content: center !important;
+        align-items: center !important;
         background: transparent !important;
     }
 
-    /* Glassmorphism Effect for Titles */
+    /* Remove heavy gradient */
     .mosaic-overlay::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 50%, transparent 100%) !important;
-        z-index: -1;
-    }
-
-    .mosaic-name {
-        background: rgba(255, 255, 255, 0.1) !important;
-        backdrop-filter: blur(10px) !important;
-        -webkit-backdrop-filter: blur(10px) !important;
-        border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
-        width: 100% !important;
-        display: block !important;
-        box-sizing: border-box !important;
+        display: none !important;
     }
 
     .services-mosaic.reveal.active .mosaic-col-left,
