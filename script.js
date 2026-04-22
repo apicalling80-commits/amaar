@@ -20,7 +20,7 @@ const translations = {
         
         /* About Section */
         'about-subtitle': 'EVERY EVENT TELLS A STORY',
-        'about-title': 'Every event tells a story <br><span class="txt-gold" style="white-space: nowrap;">we make yours unforgettable.</span>',
+        'about-title': 'Every event tells a story <br><span class="txt-gold">we make yours unforgettable.</span>',
         'about-description': 'Amor Eventz is a full-service event management company established in 2025, born out of a passion for creating unforgettable celebrations filled with love, elegance, and seamless execution.',
         'about-btn': 'KNOW MORE',
 

@@ -56,10 +56,20 @@
                     <img src="assets/logo.png" alt="Amor Eventz" style="height: 75px; width: auto;">
                 </a>
             </div>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="nav-right-group">
+                <div class="nav-actions">
+                    <a href="contact.html" class="nav-btn" data-i18n="nav-reserve">RESERVE NOW</a>
+                </div>
+                <div class="lang-switcher">
+                    <span class="lang-btn active" data-lang="en">EN</span>
+                    <span class="lang-divider"></span>
+                    <span class="lang-btn" data-lang="hi">HI</span>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
             <div class="nav-menu">
                 <ul class="nav-links">
@@ -70,14 +80,6 @@
                     <li><a href="gallery.html" data-i18n="nav-gallery">GALLERY</a></li>
                     <li><a href="contact.html" data-i18n="nav-contact">CONTACT</a></li>
                 </ul>
-                <div class="nav-actions">
-                    <div class="lang-switcher">
-                        <span class="lang-btn active" data-lang="en">EN</span>
-                        <span class="lang-divider"></span>
-                        <span class="lang-btn" data-lang="hi">HI</span>
-                    </div>
-                    <a href="contact.html" class="nav-btn" data-i18n="nav-reserve">RESERVE NOW</a>
-                </div>
             </div>
         </div>
     </nav>
@@ -142,20 +144,16 @@
     <!-- ABOUT SECTION -->
     <section id="about" class="about">
         <div class="container about-grid-new">
-            <div class="about-images" style="position:relative; height:500px;">
-                <img src="assets/about_empty_hall.png" alt="Grand Hall"
-                    style="position:absolute; width:80%; height:80%; object-fit:cover; border:1px solid rgba(212,175,106,0.2);"
-                    class="reveal">
-                <img src="assets/about_heritage_hallway.png" alt="Heritage Hallway"
-                    style="position:absolute; width:70%; height:70%; object-fit:cover; bottom:0; right:0; border:1.5px solid #b39244; z-index:2;"
-                    class="reveal delay-1">
+            <div class="about-images">
+                <img src="assets/about_empty_hall.png" alt="Grand Hall" class="about-img-1 reveal">
+                <img src="assets/about_heritage_hallway.png" alt="Heritage Hallway" class="about-img-2 reveal delay-1">
             </div>
             <div class="about-content">
                 <p class="txt-ui reveal" data-i18n="about-subtitle"
                     style="color: #b39244; font-size: 15px; letter-spacing: 4px; margin-bottom: 15px;">ABOUT US</p>
                 <h2 class="txt-hero reveal about-title-resp" data-i18n="about-title"
                     style="line-height: 1.2; margin-bottom: 30px; color: var(--clr-charcoal);">
-                    Every event tells a story <br><span class="txt-gold" style="white-space: nowrap;">we make yours
+                    Every event tells a story <br><span class="txt-gold">we make yours
                         unforgettable.</span>
                 </h2>
                 <p class="txt-body reveal delay-1" data-i18n="about-description"
@@ -523,7 +521,7 @@
                 Stories That Stay
                 Forever</h2>
 
-            <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:32px;">
+            <div class="g-3">
                 <!-- Card 1 -->
                 <div class="testimonial-card">
                     <div class="testimonial-quote-bg">“</div>
