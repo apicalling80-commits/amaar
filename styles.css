@@ -3236,9 +3236,30 @@ body.gallery-page .section-light {
     }
 }
 
+    .about-title-resp {
+        font-size: 28px !important;
+    }
+}
+
+.hero-fade-in {
+    animation: heroFadeIn 1s ease-out forwards;
+}
+
+@keyframes heroFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .no-scroll {
     overflow: hidden;
 }
+
 
 
 
