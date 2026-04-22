@@ -2087,19 +2087,40 @@ img {
     }
 
     .mosaic-name {
-        font-size: 8.5px !important;
-        /* Micro-scale for readability */
+        font-size: 10px !important;
+        font-weight: 500 !important;
         letter-spacing: 1px !important;
         text-align: center !important;
-        padding: 5px !important;
+        padding: 8px 5px !important;
         white-space: normal !important;
+        color: #ffffff !important;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) !important;
     }
 
     .mosaic-overlay {
-        padding: 5px !important;
-        justify-content: center !important;
-        align-items: center !important;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 60%) !important;
+        padding: 0 !important;
+        justify-content: flex-end !important;
+        align-items: stretch !important;
+        background: transparent !important;
+    }
+
+    /* Glassmorphism Effect for Titles */
+    .mosaic-overlay::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.2) 50%, transparent 100%) !important;
+        z-index: -1;
+    }
+
+    .mosaic-name {
+        background: rgba(255, 255, 255, 0.1) !important;
+        backdrop-filter: blur(10px) !important;
+        -webkit-backdrop-filter: blur(10px) !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+        width: 100% !important;
+        display: block !important;
+        box-sizing: border-box !important;
     }
 
     .services-mosaic.reveal.active .mosaic-col-left,
