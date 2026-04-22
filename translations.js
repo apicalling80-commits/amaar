@@ -19,6 +19,15 @@ const translations = {
         'about-description': 'Amor Eventz is a full-service event management company established in 2025, born out of a passion for creating unforgettable celebrations filled with love, elegance, and seamless execution.',
         'about-btn': 'KNOW MORE',
 
+        /* Our Services */
+        'services-subtitle': 'What We Offer',
+        'services-title': 'Our Services',
+        'srv-corp-h': 'Corporate Events',
+        'srv-wed-h': 'Wedding & Social Events',
+        'srv-birth-h': 'Birthdays & Anniversaries',
+        'srv-ent-h': 'Entertainment & Themed Events',
+        'srv-view-all': 'View All Services',
+
         /* Why Choose Us */
         'why-subtitle': 'WHY CHOOSE US',
         'why-title': 'Experience the Excellence',
@@ -102,6 +111,15 @@ const translations = {
         'about-title': 'हर आयोजन एक कहानी कहता है, हम आपके आयोजन को अविस्मरणीय बनाते हैं।',
         'about-description': 'अमोर इवेंट्स 2025 में स्थापित एक पूर्ण-सेवा इवेंट मैनेजमेंट कंपनी है, जो प्यार, लालित्य और निर्बाध निष्पादन से भरे अविस्मरणीय उत्सव बनाने के जुनून से पैदा हुई है।',
         'about-btn': 'अधिक जानें',
+
+        /* Our Services */
+        'services-subtitle': 'हम क्या प्रदान करते हैं',
+        'services-title': 'हमारी सेवाएं',
+        'srv-corp-h': 'कॉर्पोरेट कार्यक्रम',
+        'srv-wed-h': 'शादी और सामाजिक कार्यक्रम',
+        'srv-birth-h': 'जन्मदिन और सालगिरह',
+        'srv-ent-h': 'मनोरंजन और थीम वाले कार्यक्रम',
+        'srv-view-all': 'सभी सेवाएं देखें',
 
         /* Why Choose Us */
         'why-subtitle': 'हमें क्यों चुनें',

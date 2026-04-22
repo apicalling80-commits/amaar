@@ -2981,3 +2981,80 @@ body.gallery-page .section-light {
         --perspective: 1200px;
     }
 }
+
+/* ==========================================================================
+   GLOBAL MOBILE RESPONSIVENESS OVERRIDES
+   ========================================================================== */
+@media (max-width: 900px) {
+    /* Navbar Wrapping */
+    .nav-container {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 15px 20px;
+        justify-content: center;
+        gap: 15px;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+        order: 3;
+    }
+    .nav-actions {
+        margin-left: 0;
+        justify-content: center;
+        width: 100%;
+        order: 2;
+    }
+    
+    /* Typography Scaling */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .txt-hero {
+        font-size: 32px !important;
+    }
+    
+    /* Layout Stacking */
+    .about-grid-new,
+    .services-mosaic,
+    .wave-wrapper,
+    .stats-grid-premium,
+    .venue-grid-new,
+    .footer-layout {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+    
+    /* Services Mosaic specific fixes */
+    .mosaic-item-center,
+    .mosaic-item {
+        width: 100% !important;
+        height: auto !important;
+        min-height: 250px;
+    }
+    
+    /* Testimonials specific grid override */
+    .testimonials-section > .container > div[style*="display:grid"] {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+    
+    /* Venues Slider fallback */
+    .slider-track {
+        display: flex;
+        flex-wrap: wrap;
+        animation: none !important;
+        width: 100% !important;
+    }
+    .venue-card {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+    }
+}
