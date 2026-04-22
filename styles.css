@@ -231,6 +231,17 @@ img {
     /* Brand isolation buffer */
 }
 
+.menu-toggle {
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
 .nav-links {
     display: flex;
     gap: 32px;
