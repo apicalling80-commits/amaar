@@ -2087,22 +2087,22 @@ img {
     }
 
     .mosaic-name {
-        font-size: 8px !important;
+        font-size: 8.2px !important;
         font-weight: 700 !important;
         letter-spacing: 0.5px !important;
         text-align: center !important;
-        padding: 4px 6px !important;
-        white-space: nowrap !important;
+        padding: 5px 8px !important;
+        white-space: normal !important;
+        line-height: 1.15 !important;
         color: #ffffff !important;
         text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8) !important;
-        background: rgba(0, 0, 0, 0.5) !important;
+        background: rgba(0, 0, 0, 0.55) !important;
         backdrop-filter: blur(8px) !important;
         -webkit-backdrop-filter: blur(8px) !important;
         border: 1px solid rgba(255, 255, 255, 0.1) !important;
-        border-radius: 15px !important;
+        border-radius: 12px !important;
         width: fit-content !important;
-        max-width: 110% !important;
-        /* Allow slight bleed for long words */
+        max-width: 95% !important;
         display: inline-block !important;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
     }
