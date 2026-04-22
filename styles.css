@@ -2051,11 +2051,59 @@ img {
 
 @media (max-width: 768px) {
     .services-mosaic {
-        grid-template-columns: 1fr;
+        display: grid !important;
+        grid-template-columns: 1fr 1.8fr 1fr !important;
+        gap: 10px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 40px 0 !important;
+        align-items: center !important;
     }
 
     .mosaic-col {
-        gap: 15px;
+        width: 100% !important;
+        height: auto !important;
+        gap: 10px !important;
+        transform: none !important;
+        opacity: 1 !important;
+    }
+
+    .mosaic-item-center {
+        width: 100% !important;
+        height: 380px !important;
+        min-height: auto !important;
+        transform: none !important;
+        opacity: 1 !important;
+        border-radius: 12px !important;
+    }
+
+    .mosaic-item {
+        width: 100% !important;
+        height: 185px !important;
+        transform: none !important;
+        opacity: 1 !important;
+        border-radius: 10px !important;
+    }
+
+    .mosaic-name {
+        font-size: 8.5px !important;
+        /* Micro-scale for readability */
+        letter-spacing: 1px !important;
+        text-align: center !important;
+        padding: 5px !important;
+        white-space: normal !important;
+    }
+
+    .mosaic-overlay {
+        padding: 5px !important;
+        justify-content: center !important;
+        align-items: center !important;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 60%) !important;
+    }
+
+    .services-mosaic.reveal.active .mosaic-col-left,
+    .services-mosaic.reveal.active .mosaic-col-right {
+        transform: none !important;
     }
 }
 
