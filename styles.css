@@ -2052,26 +2052,26 @@ img {
 @media (max-width: 768px) {
     .services-mosaic {
         display: grid !important;
-        grid-template-columns: 1fr 1.8fr 1fr !important;
-        gap: 8px !important;
-        width: calc(100% - 20px) !important;
+        grid-template-columns: 1.1fr 1.3fr 1.1fr !important;
+        gap: 6px !important;
+        width: 100% !important;
         max-width: 100% !important;
         margin: 30px auto !important;
         align-items: center !important;
-        padding: 0 5px !important;
+        padding: 0 !important;
     }
 
     .mosaic-col {
         width: 100% !important;
         height: auto !important;
-        gap: 8px !important;
+        gap: 6px !important;
         transform: none !important;
         opacity: 1 !important;
     }
 
     .mosaic-item-center {
         width: 100% !important;
-        height: 320px !important;
+        height: 280px !important;
         min-height: auto !important;
         transform: none !important;
         opacity: 1 !important;
@@ -2080,41 +2080,41 @@ img {
 
     .mosaic-item {
         width: 100% !important;
-        height: 155px !important;
+        height: 135px !important;
         transform: none !important;
         opacity: 1 !important;
         border-radius: 10px !important;
     }
 
     .mosaic-name {
-        font-size: 9.5px !important;
-        font-weight: 600 !important;
-        letter-spacing: 1px !important;
+        font-size: 8px !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.5px !important;
         text-align: center !important;
-        padding: 6px 12px !important;
-        white-space: normal !important;
+        padding: 4px 6px !important;
+        white-space: nowrap !important;
         color: #ffffff !important;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4) !important;
-        background: rgba(179, 146, 68, 0.3) !important;
-        /* Brand Gold Tinted Glass */
-        backdrop-filter: blur(12px) !important;
-        -webkit-backdrop-filter: blur(12px) !important;
-        border: 1px solid rgba(255, 255, 255, 0.25) !important;
-        border-radius: 20px !important;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8) !important;
+        background: rgba(0, 0, 0, 0.5) !important;
+        backdrop-filter: blur(8px) !important;
+        -webkit-backdrop-filter: blur(8px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 15px !important;
         width: fit-content !important;
-        max-width: 90% !important;
+        max-width: 110% !important;
+        /* Allow slight bleed for long words */
         display: inline-block !important;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
     }
 
     .mosaic-overlay {
-        padding: 15px !important;
+        padding: 10px 4px !important;
         justify-content: center !important;
-        align-items: center !important;
+        align-items: flex-end !important;
+        /* Move to bottom for better horizontal fit */
         background: transparent !important;
     }
 
-    /* Remove heavy gradient */
     .mosaic-overlay::before {
         display: none !important;
     }
