@@ -561,7 +561,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // revealObserver.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.15 });
+    }, { threshold: 0.05 });
 
     revealElements.forEach(el => revealObserver.observe(el));
 
@@ -648,6 +648,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 }, 3000);
             }, 1500);
         });
+    }
+
     // 8. MOBILE MENU TOGGLE
     const menuToggle = document.getElementById('mobile-menu');
     const navMenu = document.querySelector('.nav-menu');
