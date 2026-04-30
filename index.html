@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amor Eventz | Where Every Celebration Becomes a Legend</title>
+
+    <!-- Fonts Overhaul -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Amor Eventz — Premium banquet hall and wedding venue. Elegant spaces for weddings, receptions, corporate events and private celebrations. Enquire now.">
+    <meta name="keywords" content="banquet hall, wedding venue, event space, reception hall, Amor Eventz">
+    <meta property="og:title" content="Amor Eventz | Where Every Celebration Becomes a Legend">
+    <meta property="og:description"
+        content="Premium banquet halls and event spaces for weddings, receptions, corporate galas and private celebrations.">
+    <meta property="og:image" content="https://amor-event-blue.vercel.app/assets/amor-eventz-logo.png">
+    <meta property="og:url" content="https://amor-event-blue.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Taj-inspired Section Overrides from styles.css or local */
+        .white-section {
+            background: var(--clr-light-section);
+            color: var(--clr-charcoal);
+        }
+
+        .white-section h2 {
+            color: var(--clr-charcoal);
+        }
+
+        .white-section p {
+            color: #444;
+        }
+
+        .ornament-divider {
+            padding: 30px 0;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Amor Eventz" style="height: 75px; width: auto;">
+                </a>
+            </div>
+            <div class="nav-right-group">
+                <div class="nav-actions">
+                    <a href="contact.html" class="nav-btn" data-i18n="nav-reserve">RESERVE NOW</a>
+                </div>
+                <div class="lang-switcher">
+                    <span class="lang-btn active" data-lang="en">EN</span>
+                    <span class="lang-divider"></span>
+                    <span class="lang-btn" data-lang="hi">HI</span>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="nav-home">HOME</a></li>
+                    <li><a href="about.html" data-i18n="nav-about">ABOUT</a></li>
+                    <li><a href="venues.html" data-i18n="nav-venues">VENUES</a></li>
+                    <li><a href="services.html" data-i18n="nav-services">SERVICES</a></li>
+                    <li><a href="gallery.html" data-i18n="nav-gallery">GALLERY</a></li>
+                    <li><a href="contact.html" data-i18n="nav-contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="home" class="hero">
+        <div class="hero-slider" id="heroSlider">
+            <div class="hero-slide active" style="background-image: url('assets/hero (1).jpg');"></div>
+            <div class="hero-slide" style="background-image: url('assets/hero (2).jpg');"></div>
+            <div class="hero-slide" style="background-image: url('assets/hero (3).jpg');"></div>
+            <div class="hero-slide" style="background-image: url('assets/hero (4).jpg');"></div>
+            <div class="hero-slide" style="background-image: url('assets/hero (5).jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+            <p class="txt-ui hero-fade-in"
+                style="color: var(--clr-secondary); font-size: 14px; letter-spacing: 3px; margin-bottom: 20px;"
+                data-i18n="hero-subtitle">Mumbai's Premier Event Management</p>
+            <h1 class="hero-title hero-fade-in" data-i18n="hero-title" style="margin-bottom: 25px; line-height: 1.1;">
+                Crafting Celebrations with Love & Elegance
+            </h1>
+            <p class="hero-fade-in"
+                style="color: white; font-size: 18px; max-width: 700px; margin: 0 auto 40px; opacity: 0.9;"
+                data-i18n="hero-description">
+                From intimate gatherings to grand celebrations — we bring your vision to life beautifully and
+                effortlessly.
+            </p>
+
+
+
+            <div class="hero-btns hero-fade-in">
+                <a href="venues.html" class="btn btn-primary" data-i18n="hero-btn-explore">EXPLORE OUR VENUES</a>
+                <a href="contact.html" class="btn btn-outline" data-i18n="hero-btn-enquire">ENQUIRE NOW</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="marquee-section">
+        <div class="marquee">
+            <div class="marquee-inner">
+                <span>+ WEDDINGS + RECEPTIONS + CORPORATE GALAS + PRIVATE SOIRÉES + GRAND ANNIVERSARIES</span>
+                <span>+ WEDDINGS + RECEPTIONS + CORPORATE GALAS + PRIVATE SOIRÉES + GRAND ANNIVERSARIES</span>
+                <span>+ WEDDINGS + RECEPTIONS + CORPORATE GALAS + PRIVATE SOIRÉES + GRAND ANNIVERSARIES</span>
+                <span>+ WEDDINGS + RECEPTIONS + CORPORATE GALAS + PRIVATE SOIRÉES + GRAND ANNIVERSARIES</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ORNAMENTAL DIVIDER -->
+    <div class="ornament-divider">
+        <svg width="320" height="20" viewBox="0 0 320 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+            style="display:block; margin:0 auto;">
+            <line x1="0" y1="10" x2="130" y2="10" stroke="#b03055" stroke-width="0.5" />
+            <polygon points="143,10 150,5 157,10 150,15" fill="#b03055" opacity="0.8" />
+            <circle cx="160" cy="10" r="3" fill="#b03055" />
+            <polygon points="163,10 170,5 177,10 170,15" fill="#b03055" opacity="0.8" />
+            <line x1="190" y1="10" x2="320" y2="10" stroke="#b03055" stroke-width="0.5" />
+        </svg>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="container about-grid-new">
+            <div class="about-images">
+                <img src="assets/images/bluesea-07.jpg" alt="Blue Sea Mumbai" class="about-img-1 reveal">
+                <img src="assets/images/venues-sai-palace-restaurant-and-banquet-hall-banquethall-2_15_437278-168724458337049.jpeg" alt="Sai Palace Banquet" class="about-img-2 reveal delay-1">
+            </div>
+            <div class="about-content">
+                <p class="txt-ui reveal" data-i18n="about-subtitle"
+                    style="color: #b03055; font-size: 15px; letter-spacing: 4px; margin-bottom: 15px;">ABOUT US</p>
+                <h2 class="txt-hero reveal about-title-resp" data-i18n="about-title"
+                    style="line-height: 1.2; margin-bottom: 30px; color: var(--clr-charcoal);">
+                    Every event tells a story <br><span class="txt-gold">we make yours
+                        unforgettable.</span>
+                </h2>
+                <p class="txt-body reveal delay-1" data-i18n="about-description"
+                    style="font-size: 16px; line-height: 1.8; color: var(--clr-charcoal); opacity: 0.9; margin-bottom: 30px;">
+                    Amor Eventz is a full-service event management company established in 2025, born out of a passion
+                    for creating unforgettable celebrations filled with love, elegance, and seamless execution.
+                </p>
+                <div class="reveal delay-2">
+                    <a href="about.html" class="btn btn-outline" data-i18n="about-btn" style="border-radius: 2px;">KNOW
+                        MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ORNAMENTAL DIVIDER -->
+    <div class="ornament-divider">
+        <svg width="320" height="20" viewBox="0 0 320 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+            style="display:block; margin:0 auto;">
+            <line x1="0" y1="10" x2="130" y2="10" stroke="#b03055" stroke-width="0.5" />
+            <polygon points="143,10 150,5 157,10 150,15" fill="#b03055" opacity="0.8" />
+            <circle cx="160" cy="10" r="3" fill="#b03055" />
+            <polygon points="163,10 170,5 177,10 170,15" fill="#b03055" opacity="0.8" />
+            <line x1="190" y1="10" x2="320" y2="10" stroke="#b03055" stroke-width="0.5" />
+        </svg>
+    </div>
+
+    <!-- OUR SERVICES -->
+    <section class="services-section reveal" id="services">
+        <div class="container">
+            <div style="text-align:center; margin-bottom:30px;">
+                <p class="txt-ui reveal" data-i18n="services-subtitle"
+                    style="color: #b03055; font-size: 15px; letter-spacing: 4px; margin-bottom: 15px;">What We Offer</p>
+                <h2 class="txt-hero" style="font-size:48px;" data-i18n="services-title">Our Services</h2>
+                <div class="divider-center" style="margin: 15px auto; width: 60px;"></div>
+            </div>
+
+            <div class="services-mosaic reveal">
+                <!-- Left Column -->
+                <div class="mosaic-col mosaic-col-left">
+                    <div class="mosaic-item">
+                        <img src="assets/images/services page images  (1).jpeg" alt="Corporate Events">
+                        <div class="mosaic-overlay">
+                            <span class="mosaic-name" data-i18n="srv-corp-h">Corporate Events</span>
+                        </div>
+                    </div>
+                    <div class="mosaic-item">
+                        <img src="assets/images/wedding and socal event.jpg" alt="Wedding &amp; Social Events">
+                        <div class="mosaic-overlay">
+                            <span class="mosaic-name" data-i18n="srv-wed-h">Wedding & Social Events</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center Column -->
+                <div class="mosaic-item-center">
+                    <img src="services-img/middleimage.jpeg" alt="Grand Celebration"
+                        style="width:100%; height:100%; object-fit:cover; display:block;">
+                </div>
+
+                <!-- Right Column -->
+                <div class="mosaic-col mosaic-col-right">
+                    <div class="mosaic-item">
+                        <img src="assets/images/Birthdays & Anniversaries.jpg" alt="Birthdays &amp; Anniversaries">
+                        <div class="mosaic-overlay">
+                            <span class="mosaic-name" data-i18n="srv-birth-h">Birthdays & Anniversaries</span>
+                        </div>
+                    </div>
+                    <div class="mosaic-item">
+                        <img src="assets/images/Social Gatherings.jpeg" alt="Entertainment &amp; Themed Events">
+                        <div class="mosaic-overlay">
+                            <span class="mosaic-name" data-i18n="srv-ent-h">Entertainment & Themed Events</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-cta" style="margin-top: 50px;">
+                <a href="services.html" class="btn btn-primary" data-i18n="srv-view-all">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ORNAMENTAL DIVIDER -->
+    <div class="ornament-divider">
+        <svg width="320" height="20" viewBox="0 0 320 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+            style="display:block; margin:0 auto;">
+            <line x1="0" y1="10" x2="130" y2="10" stroke="#b03055" stroke-width="0.5" />
+            <polygon points="143,10 150,5 157,10 150,15" fill="#b03055" opacity="0.8" />
+            <circle cx="160" cy="10" r="3" fill="#b03055" />
+            <polygon points="163,10 170,5 177,10 170,15" fill="#b03055" opacity="0.8" />
+            <line x1="190" y1="10" x2="320" y2="10" stroke="#b03055" stroke-width="0.5" />
+        </svg>
+    </div>
+
+    <!-- WHY CHOOSE US (Wavy Timeline) -->
+    <section class="why-choose-wave reveal" id="why-choose">
+        <div class="container">
+            <div style="text-align:center; margin-bottom:40px;">
+                <p class="txt-ui reveal" data-i18n="why-subtitle"
+                    style="color: #b03055; font-size: 15px; letter-spacing: 4px; margin-bottom: 15px;">WHY CHOOSE US</p>
+                <h2 class="txt-hero" data-i18n="why-title" style="font-size:48px;">Experience the Excellence</h2>
+                <div class="divider-center" style="margin: 15px auto; width: 60px;"></div>
+            </div>
+
+            <div class="wave-wrapper">
+                <!-- SVG Wave Background -->
+                <svg class="wave-svg-bg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,60 C300,120 900,0 1200,60" stroke="#b03055" stroke-width="2" fill="none"
+                        stroke-dasharray="10,10" />
+                </svg>
+
+                <!-- Step 1 (Up) -->
+                <div class="wave-step up reveal">
+                    <div class="wave-info">
+                        <h4 data-i18n="why-venue-h">50+ Venue Options</h4>
+                        <p data-i18n="why-venue-p">across prime locations</p>
+                    </div>
+                    <div class="wave-icon-circle" style="border-color: #b03055;">
+                        <i class="fas fa-map-marker-alt" style="color: #b03055;"></i>
+                    </div>
+                </div>
+
+                <!-- Step 2 (Down) -->
+                <div class="wave-step down reveal delay-1">
+                    <div class="wave-icon-circle" style="border-color: #b03055;">
+                        <i class="fas fa-utensils" style="color: #b03055;"></i>
+                    </div>
+                    <div class="wave-info">
+                        <h4 data-i18n="why-catering-h">50+ Catering Options</h4>
+                        <p data-i18n="why-catering-p">with diverse cuisines</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 (Up) -->
+                <div class="wave-step up reveal delay-2">
+                    <div class="wave-info">
+                        <h4 data-i18n="why-makeup-h">Professional Makeup</h4>
+                        <p data-i18n="why-makeup-p">Artists & Decor Options</p>
+                    </div>
+                    <div class="wave-icon-circle" style="border-color: #b03055;">
+                        <i class="fas fa-paint-brush" style="color: #b03055;"></i>
+                    </div>
+                </div>
+
+                <!-- Step 4 (Down) -->
+                <div class="wave-step down reveal delay-3">
+                    <div class="wave-icon-circle" style="border-color: #b03055;">
+                        <i class="fas fa-user-friends" style="color: #b03055;"></i>
+                    </div>
+                    <div class="wave-info">
+                        <h4 data-i18n="why-staff-h">Trained Support Staff</h4>
+                        <p data-i18n="why-staff-p">for smooth coordination</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREMIUM STATS BAR -->
+    <section class="stats-bar-premium reveal">
+        <div class="container">
+            <div class="stats-grid-premium">
+                <div class="stat-item-premium">
+                    <span class="stat-num-premium counter" data-target="50" data-suffix="+">0</span>
+                    <span class="stat-label-premium" data-i18n="stat-venues">Venue Options</span>
+                </div>
+                <div class="stat-item-premium">
+                    <span class="stat-num-premium counter" data-target="50" data-suffix="+">0</span>
+                    <span class="stat-label-premium" data-i18n="stat-catering">Catering Options</span>
+                </div>
+                <div class="stat-item-premium">
+                    <span class="stat-num-premium counter" data-target="100" data-suffix="%">0</span>
+                    <span class="stat-label-premium" data-i18n="stat-satisfaction">Client Satisfaction</span>
+                </div>
+                <div class="stat-item-premium">
+                    <span class="stat-num-premium counter" data-target="50" data-suffix="+">0</span>
+                    <span class="stat-label-premium" data-i18n="stat-events">Events Planned</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ORNAMENTAL DIVIDER -->
+    <div class="ornament-divider">
+        <svg width="320" height="20" viewBox="0 0 320 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+            style="display:block; margin:0 auto;">
+            <line x1="0" y1="10" x2="130" y2="10" stroke="#b03055" stroke-width="0.5" />
+            <polygon points="143,10 150,5 157,10 150,15" fill="#b03055" opacity="0.8" />
+            <circle cx="160" cy="10" r="3" fill="#b03055" />
+            <polygon points="163,10 170,5 177,10 170,15" fill="#b03055" opacity="0.8" />
+            <line x1="190" y1="10" x2="320" y2="10" stroke="#b03055" stroke-width="0.5" />
+        </svg>
+    </div>
+
+    <!-- VENUES SECTION -->
+    <section id="venues" class="venues section-padding" style="padding-top: 20px;">
+        <div class="container">
+            <div class="section-header reveal text-center" style="margin-bottom:50px;">
+                <p class="txt-ui txt-gold" data-i18n="spaces-subtitle" style="margin-bottom:16px;">OUR SPACES</p>
+                <h2 style="font-size:48px; margin-bottom:24px;" data-i18n="spaces-title">Discover the Venues</h2>
+                <div class="divider-center"></div>
+            </div>
+
+            <div class="venues-slider reveal">
+                <div class="slider-track">
+                    <!-- 1. ITC Grand Central -->
+                    <div class="venue-card">
+                        <img src="assets/hotel_itc.png" alt="ITC Grand Central">
+                        <div class="venue-card-info">
+                            <h3 data-i18n="venue-itc-title">ITC Grand Central</h3>
+                            <p data-i18n="venue-itc-desc">Luxury 5-star venue in Mumbai</p>
+                        </div>
+                    </div>
+                    <!-- 2. Taj Santacruz -->
+                    <div class="venue-card">
+                        <img src="assets/hotel_taj.png" alt="Taj Santacruz">
+                        <div class="venue-card-info">
+                            <h3 data-i18n="venue-taj-title">Taj Santacruz</h3>
+                            <p data-i18n="venue-taj-desc">Premium modern luxury</p>
+                        </div>
+                    </div>
+                    <!-- 3. Sahara Star -->
+                    <div class="venue-card">
+                        <img src="assets/hotel_sahara.png" alt="Sahara Star">
+                        <div class="venue-card-info">
+                            <h3 data-i18n="venue-sahara-title">Sahara Star</h3>
+                            <p data-i18n="venue-sahara-desc">Iconic dome architecture</p>
+                        </div>
+                    </div>
+                    <!-- 4. The Westin Mumbai -->
+                    <div class="venue-card">
+                        <img src="assets/hotel_westin.png" alt="The Westin Mumbai">
+                        <div class="venue-card-info">
+                            <h3 data-i18n="venue-westin-title">The Westin Mumbai</h3>
+                            <p data-i18n="venue-westin-desc">Scenic lake views</p>
+                        </div>
+                    </div>
+                    <!-- 5. Radisson Blu -->
+                    <div class="venue-card">
+                        <img src="assets/hotel_radisson.png" alt="Radisson Blu Mumbai">
+                        <div class="venue-card-info">
+                            <h3 data-i18n="venue-radisson-title">Radisson Blu</h3>
+                            <p data-i18n="venue-radisson-desc">Modern premium events</p>
+                        </div>
+                    </div>
+                    <!-- 6. NESCO -->
+                    <div class="venue-card">
+                        <img src="assets/hotel_nesco.png" alt="NESCO Exhibition Centre">
+                        <div class="venue-card-info">
+                            <h3 data-i18n="venue-nesco-title">NESCO Centre</h3>
+                            <p data-i18n="venue-nesco-desc">Large-scale event space</p>
+                        </div>
+                    </div>
+                    <!-- 7. Courtyard by Marriott -->
+                    <div class="venue-card">
+                        <img src="assets/hotel_marriott.png" alt="Courtyard by Marriott">
+                        <div class="venue-card-info">
+                            <h3 data-i18n="venue-marriott-title">Courtyard by Marriott</h3>
+                            <p data-i18n="venue-marriott-desc">Modern business & weddings</p>
+                        </div>
+                    </div>
+                    <!-- 8. The Orchid -->
+                    <div class="venue-card">
+                        <img src="assets/hotel_orchid.png" alt="The Orchid Hotel">
+                        <div class="venue-card-info">
+                            <h3 data-i18n="venue-orchid-title">The Orchid Hotel</h3>
+                            <p data-i18n="venue-orchid-desc">Eco-luxury excellence</p>
+                        </div>
+                    </div>
+                    <!-- 9. Hilton -->
+                    <div class="venue-card">
+                        <img src="assets/hotel_hilton.png" alt="Hilton Mumbai">
+                        <div class="venue-card-info">
+                            <h3 data-i18n="venue-hilton-title">Hilton Mumbai</h3>
+                            <p data-i18n="venue-hilton-desc">Elegant heritage style</p>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate for infinite loop -->
+                    <div class="venue-card"><img src="assets/hotel_itc.png" alt="ITC Grand Central">
+                        <div class="venue-card-info">
+                            <h3 data-i18n="venue-itc-title">ITC Grand Central</h3>
+                            <p data-i18n="venue-itc-desc">Luxury 5-star venue in Mumbai</p>
+                        </div>
+                    </div>
+                    <div class="venue-card"><img src="assets/hotel_taj.png" alt="Taj Santacruz">
+                        <div class="venue-card-info">
+                            <h3 data-i18n="venue-taj-title">Taj Santacruz</h3>
+                            <p data-i18n="venue-taj-desc">Premium modern luxury</p>
+                        </div>
+                    </div>
+                    <div class="venue-card"><img src="assets/hotel_sahara.png" alt="Sahara Star">
+                        <div class="venue-card-info">
+                            <h3 data-i18n="venue-sahara-title">Sahara Star</h3>
+                            <p data-i18n="venue-sahara-desc">Iconic dome architecture</p>
+                        </div>
+                    </div>
+                    <div class="venue-card"><img src="assets/hotel_westin.png" alt="The Westin Mumbai">
+                        <div class="venue-card-info">
+                            <h3 data-i18n="venue-westin-title">The Westin Mumbai</h3>
+                            <p data-i18n="venue-westin-desc">Scenic lake views</p>
+                        </div>
+                    </div>
+                    <div class="venue-card"><img src="assets/hotel_radisson.png" alt="Radisson Blu Mumbai">
+                        <div class="venue-card-info">
+                            <h3>Radisson Blu</h3>
+                            <p data-i18n="venue-radisson-desc">Modern premium events</p>
+                        </div>
+                    </div>
+                    <div class="venue-card"><img src="assets/hotel_nesco.png" alt="NESCO Exhibition Centre">
+                        <div class="venue-card-info">
+                            <h3 data-i18n="venue-nesco-title">NESCO Centre</h3>
+                            <p data-i18n="venue-nesco-desc">Large-scale event space</p>
+                        </div>
+                    </div>
+                    <div class="venue-card"><img src="assets/hotel_marriott.png" alt="Courtyard by Marriott">
+                        <div class="venue-card-info">
+                            <h3 data-i18n="venue-marriott-title">Courtyard by Marriott</h3>
+                            <p data-i18n="venue-marriott-desc">Modern business & weddings</p>
+                        </div>
+                    </div>
+                    <div class="venue-card"><img src="assets/hotel_orchid.png" alt="The Orchid Hotel">
+                        <div class="venue-card-info">
+                            <h3>The Orchid Hotel</h3>
+                            <p data-i18n="venue-orchid-desc">Eco-luxury excellence</p>
+                        </div>
+                    </div>
+                    <div class="venue-card"><img src="assets/hotel_hilton.png" alt="Hilton Mumbai">
+                        <div class="venue-card-info">
+                            <h3>Hilton Mumbai</h3>
+                            <p data-i18n="venue-hilton-desc">Elegant heritage style</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center reveal" style="margin-top: 50px;">
+                <a href="venues.html" class="btn btn-outline" data-i18n="venue-view-all">VIEW ALL VENUES</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ORNAMENTAL DIVIDER -->
+    <div class="ornament-divider">
+        <svg width="320" height="20" viewBox="0 0 320 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+            style="display:block; margin:0 auto;">
+            <line x1="0" y1="10" x2="130" y2="10" stroke="#b03055" stroke-width="0.5" />
+            <polygon points="143,10 150,5 157,10 150,15" fill="#b03055" opacity="0.8" />
+            <circle cx="160" cy="10" r="3" fill="#b03055" />
+            <polygon points="163,10 170,5 177,10 170,15" fill="#b03055" opacity="0.8" />
+            <line x1="190" y1="10" x2="320" y2="10" stroke="#b03055" stroke-width="0.5" />
+        </svg>
+    </div>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section reveal"
+        style="background:#ffffff; padding:20px 0; position:relative; overflow:hidden; color:var(--clr-charcoal);">
+        <div
+            style="position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%, rgba(201,149,106,0.06) 0%, transparent 60%), radial-gradient(ellipse at 80% 50%, rgba(212,175,106,0.04) 0%, transparent 60%); pointer-events:none;">
+        </div>
+        <div class="container">
+            <p class="txt-ui txt-gold" data-i18n="testi-subtitle" style="text-align:center; margin-bottom:16px;">WORDS
+                FROM OUR FAMILIES</p>
+            <h2 class="txt-hero" data-i18n="testi-title" style="font-size:60px; text-align:center; margin-bottom:50px;">
+                Stories That Stay
+                Forever</h2>
+
+            <div class="g-3">
+                <!-- Card 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-quote-bg">“</div>
+                    <div class="testimonial-icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M14.017 21L16.4111 14.9084C17.0673 13.238 17.5147 11.6667 17.8428 10C18.171 8.33333 18.335 6.66667 18.335 5H13.6267C13.6267 6.66667 13.5611 8.2381 13.4298 9.71429C13.2986 11.1905 12.9213 12.8571 12.2981 14.7143L14.017 21ZM5.63294 21L8.02709 14.9084C8.68328 13.238 9.13067 11.6667 9.45885 10C9.78703 8.33333 9.95111 6.66667 9.95111 5H5.24286C5.24286 6.66667 5.17724 8.2381 5.046 9.71429C4.91475 11.1905 4.53753 12.8571 3.91433 14.7143L5.63294 21Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text" data-i18n="testi-1-text">Amor Eventz turned our dream wedding into
+                        something far beyond what we
+                        imagined. Every flower, every light, every moment — absolute perfection.</p>
+                    <div class="testimonial-divider"></div>
+                    <p class="testimonial-author" data-i18n="testi-1-author">Priya & Arjun Shah</p>
+                    <p class="testimonial-meta" data-i18n="testi-1-meta">Wedding · March 2024</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-quote-bg">“</div>
+                    <div class="testimonial-icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M14.017 21L16.4111 14.9084C17.0673 13.238 17.5147 11.6667 17.8428 10C18.171 8.33333 18.335 6.66667 18.335 5H13.6267C13.6267 6.66667 13.5611 8.2381 13.4298 9.71429C13.2986 11.1905 12.9213 12.8571 12.2981 14.7143L14.017 21ZM5.63294 21L8.02709 14.9084C8.68328 13.238 9.13067 11.6667 9.45885 10C9.78703 8.33333 9.95111 6.66667 9.95111 5H5.24286C5.24286 6.66667 5.17724 8.2381 5.046 9.71429C4.91475 11.1905 4.53753 12.8571 3.91433 14.7143L5.63294 21Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text" data-i18n="testi-2-text">The Grand Ballroom was breathtaking. From the
+                        moment we walked in, we
+                        knew this was the place. The team handled everything — we just celebrated.</p>
+                    <div class="testimonial-divider"></div>
+                    <p class="testimonial-author" data-i18n="testi-2-author">Meera & Rahul Kapoor</p>
+                    <p class="testimonial-meta" data-i18n="testi-2-meta">Reception · Nov 2023</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-quote-bg">“</div>
+                    <div class="testimonial-icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M14.017 21L16.4111 14.9084C17.0673 13.238 17.5147 11.6667 17.8428 10C18.171 8.33333 18.335 6.66667 18.335 5H13.6267C13.6267 6.66667 13.5611 8.2381 13.4298 9.71429C13.2986 11.1905 12.9213 12.8571 12.2981 14.7143L14.017 21ZM5.63294 21L8.02709 14.9084C8.68328 13.238 9.13067 11.6667 9.45885 10C9.78703 8.33333 9.95111 6.66667 9.95111 5H5.24286C5.24286 6.66667 5.17724 8.2381 5.046 9.71429C4.91475 11.1905 4.53753 12.8571 3.91433 14.7143L5.63294 21Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text" data-i18n="testi-3-text">Professional, warm, and absolutely
+                        detail-oriented. Our corporate gala
+                        was flawlessly executed. The AV setup and catering exceeded expectations.</p>
+                    <div class="testimonial-divider"></div>
+                    <p class="testimonial-author" data-i18n="testi-3-author">Sneha Desai</p>
+                    <p class="testimonial-meta" data-i18n="testi-3-meta">Corporate Gala · Jan 2024</p>
+                </div>
+            </div>
+
+            <div style="text-align:center; margin-top:64px;">
+                <p style="font-size:16px; opacity:0.7; margin-bottom:20px;" data-i18n="review-stats">Rated 4.9 / 5 on
+                    Google Reviews · 120+
+                    verified reviews</p>
+                <a href="contact.html" class="btn btn-outline" data-i18n="read-reviews" style="border-radius:2px;">READ
+                    ALL REVIEWS →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOUTIQUE FOOTER -->
+    <footer class="protocol-footer">
+        <div class="footer-massive-text">
+            <span>Amor Eventz</span>
+        </div>
+        <div class="footer-layout">
+            <div class="footer-left-col">
+                <p class="footer-tagline" data-i18n="footer-tagline">CRAFTING CELEBRATIONS WITH LOVE & ELEGANCE.
+                </p>
+                <div class="footer-pill-links">
+                    <a href="contact.html" class="pill-btn" data-i18n="footer-book">BOOK A VENUE</a>
+                    <a href="mailto:info@amoreventz.com" class="pill-btn" data-i18n="footer-email">EMAIL
+                        US</a>
+                    <a href="https://instagram.com/amoreventz" target="_blank" class="pill-btn"
+                        data-i18n="footer-linkedin">LINKEDIN</a>
+                    <a href="https://twitter.com/amoreventz" target="_blank" class="pill-btn" data-i18n="footer-x">X</a>
+                </div>
+                <div class="footer-legal-links">
+                    <a href="#" data-i18n="footer-privacy">PRIVACY POLICY</a>
+                    <a href="#" data-i18n="footer-terms">TERMS AND CONDITIONS</a>
+                    <a href="#" data-i18n="footer-collection">COLLECTION STATEMENT</a>
+                    <a href="#" data-i18n="footer-cookies">COOKIE SETTINGS</a>
+                </div>
+                <p class="footer-copyright" data-i18n="footer-copyright">COPYRIGHT © AMOR EVENTZ LIMITED 2025
+                </p>
+            </div>
+
+            <div class="footer-right-col">
+                <p class="newsletter-text" data-i18n="footer-news-text">Get curated event inspiration & venue
+                    insights that you won't find anywhere
+                    else, delivered straight to your inbox.</p>
+                <form class="newsletter-form">
+                    <div class="form-row">
+                        <div class="form-group-footer">
+                            <input type="text" placeholder="First name*" data-i18n-placeholder="footer-first-name"
+                                required>
+                        </div>
+                        <div class="form-group-footer">
+                            <input type="text" placeholder="Last name*" data-i18n-placeholder="footer-last-name"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-row form-row-bottom">
+                        <div class="form-group-footer email-group">
+                            <input type="email" placeholder="Email*" data-i18n-placeholder="footer-email-field"
+                                required>
+                        </div>
+                        <button type="submit" class="pill-btn submit-btn"
+                            data-i18n="footer-subscribe">SUBSCRIBE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/917777060321" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

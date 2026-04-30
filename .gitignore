@@ -1,0 +1,10 @@
+# Original large video source files (snippets in video-clips/ are committed instead)
+assets/videos/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+*.swp

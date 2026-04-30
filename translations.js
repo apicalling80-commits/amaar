@@ -1,0 +1,190 @@
+const translations = {
+    'en': {
+        'nav-home': 'HOME',
+        'nav-about': 'ABOUT',
+        'nav-venues': 'VENUES',
+        'nav-services': 'SERVICES',
+        'nav-gallery': 'GALLERY',
+        'nav-contact': 'CONTACT',
+        'nav-reserve': 'RESERVE NOW',
+        'hero-title-1': 'Where Every',
+        'hero-title-2': 'Celebration',
+        'hero-title-3': 'Becomes a Legend.',
+        'hero-btn-explore': 'EXPLORE OUR VENUES',
+        'hero-btn-enquire': 'ENQUIRE NOW',
+        
+        /* About Section */
+        'about-subtitle': 'EVERY EVENT TELLS A STORY',
+        'about-title': 'Every event tells a story we make yours unforgettable.',
+        'about-description': 'Amor Eventz is a full-service event management company established in 2025, born out of a passion for creating unforgettable celebrations filled with love, elegance, and seamless execution.',
+        'about-btn': 'KNOW MORE',
+
+        /* Our Services */
+        'services-subtitle': 'What We Offer',
+        'services-title': 'Our Services',
+        'srv-corp-h': 'Corporate Events',
+        'srv-wed-h': 'Wedding & Social Events',
+        'srv-birth-h': 'Birthdays & Anniversaries',
+        'srv-ent-h': 'Entertainment & Themed Events',
+        'srv-view-all': 'View All Services',
+
+        /* Why Choose Us */
+        'why-subtitle': 'WHY CHOOSE US',
+        'why-title': 'Experience the Excellence',
+        'why-venue-h': '50+ Venue Options',
+        'why-venue-p': 'across prime locations',
+        'why-catering-h': '50+ Catering Options',
+        'why-catering-p': 'with diverse cuisines',
+        'why-makeup-h': 'Professional Makeup',
+        'why-makeup-p': 'Artists & Decor Options',
+        'why-staff-h': 'Trained Support Staff',
+        'why-staff-p': 'for smooth coordination',
+
+        /* Stats */
+        'stat-venues': 'Venue Options',
+        'stat-catering': 'Catering Options',
+        'stat-satisfaction': 'Client Satisfaction',
+        'stat-events': 'Events Planned',
+
+        /* Our Spaces */
+        'spaces-subtitle': 'OUR SPACES',
+        'spaces-title': 'Discover the Venues',
+        'venue-itc-desc': 'Luxury 5-star venue in Mumbai',
+        'venue-taj-desc': 'Premium modern luxury',
+        'venue-sahara-desc': 'Iconic dome architecture',
+        'venue-westin-desc': 'Scenic lake views',
+        'venue-radisson-desc': 'Modern premium events',
+        'venue-nesco-desc': 'Large-scale event space',
+        'venue-marriott-desc': 'Modern business & weddings',
+        'venue-orchid-desc': 'Eco-luxury excellence',
+        'venue-hilton-desc': 'Elegant heritage style',
+        'venue-view-all': 'VIEW ALL VENUES',
+
+        /* Testimonials */
+        'testi-subtitle': 'WORDS FROM OUR FAMILIES',
+        'testi-title': 'Stories That Stay Forever',
+        'testi-1-text': 'Amor Eventz turned our dream wedding into something far beyond what we imagined. Every flower, every light, every moment — absolute perfection.',
+        'testi-1-author': 'Priya & Arjun Shah',
+        'testi-1-meta': 'Wedding · March 2024',
+        'testi-2-text': 'The Grand Ballroom was breathtaking. From the moment we walked in, we knew this was the place. The team handled everything — we just celebrated.',
+        'testi-2-author': 'Meera & Rahul Kapoor',
+        'testi-2-meta': 'Reception · Nov 2023',
+        'testi-3-text': 'Professional, warm, and absolutely detail-oriented. Our corporate gala was flawlessly executed. The AV setup and catering exceeded expectations.',
+        'testi-3-author': 'Sneha Desai',
+        'testi-3-meta': 'Corporate Gala · Jan 2024',
+        'review-stats': 'Rated 4.9 / 5 on Google Reviews · 120+ verified reviews',
+        'read-reviews': 'READ ALL REVIEWS →',
+
+        /* Boutique Footer */
+        'footer-tagline': 'CRAFTING CELEBRATIONS WITH LOVE & ELEGANCE.',
+        'footer-book': 'BOOK A VENUE',
+        'footer-email': 'EMAIL US',
+        'footer-linkedin': 'LINKEDIN',
+        'footer-x': 'X',
+        'footer-privacy': 'PRIVACY POLICY',
+        'footer-terms': 'TERMS AND CONDITIONS',
+        'footer-collection': 'COLLECTION STATEMENT',
+        'footer-cookies': 'COOKIE SETTINGS',
+        'footer-copyright': 'COPYRIGHT © AMOR EVENTZ LIMITED 2025',
+        'footer-news-text': 'Get curated event inspiration & venue insights that you won\'t find anywhere else, delivered straight to your inbox.',
+        'footer-first-name': 'First name*',
+        'footer-last-name': 'Last name*',
+        'footer-email-field': 'Email*',
+        'footer-subscribe': 'SUBSCRIBE'
+    },
+    'hi': {
+        'nav-home': 'होम',
+        'nav-about': 'हमारे बारे में',
+        'nav-venues': 'स्थान',
+        'nav-services': 'सेवाएं',
+        'nav-gallery': 'गैलरी',
+        'nav-contact': 'संपर्क',
+        'nav-reserve': 'अभी बुक करें',
+        'hero-title-1': 'जहाँ हर',
+        'hero-title-2': 'उत्सव',
+        'hero-title-3': 'एक महान गाथा बन जाता है।',
+        'hero-btn-explore': 'हमारे स्थानों का अन्वेषण करें',
+        'hero-btn-enquire': 'अभी पूछताछ करें',
+        
+        /* About Section */
+        'about-subtitle': 'हर आयोजन एक कहानी कहता है',
+        'about-title': 'हर आयोजन एक कहानी कहता है, हम आपके आयोजन को अविस्मरणीय बनाते हैं।',
+        'about-description': 'अमोर इवेंट्स 2025 में स्थापित एक पूर्ण-सेवा इवेंट मैनेजमेंट कंपनी है, जो प्यार, लालित्य और निर्बाध निष्पादन से भरे अविस्मरणीय उत्सव बनाने के जुनून से पैदा हुई है।',
+        'about-btn': 'अधिक जानें',
+
+        /* Our Services */
+        'services-subtitle': 'हम क्या प्रदान करते हैं',
+        'services-title': 'हमारी सेवाएं',
+        'srv-corp-h': 'कॉर्पोरेट कार्यक्रम',
+        'srv-wed-h': 'शादी और सामाजिक कार्यक्रम',
+        'srv-birth-h': 'जन्मदिन और सालगिरह',
+        'srv-ent-h': 'मनोरंजन और थीम वाले कार्यक्रम',
+        'srv-view-all': 'सभी सेवाएं देखें',
+
+        /* Why Choose Us */
+        'why-subtitle': 'हमें क्यों चुनें',
+        'why-title': 'उत्कृष्टता का अनुभव करें',
+        'why-venue-h': '50+ स्थान विकल्प',
+        'why-venue-p': 'प्रमुख स्थानों पर',
+        'why-catering-h': '50+ खानपान विकल्प',
+        'why-catering-p': 'विविध व्यंजनों के साथ',
+        'why-makeup-h': 'पेशेवर मेकअप',
+        'why-makeup-p': 'कलाकार और सजावट विकल्प',
+        'why-staff-h': 'प्रशिक्षित सहायक कर्मचारी',
+        'why-staff-p': 'सुचारू समन्वय के लिए',
+
+        /* Stats */
+        'stat-venues': 'स्थान विकल्प',
+        'stat-catering': 'खानपान विकल्प',
+        'stat-satisfaction': 'ग्राहक संतुष्टि',
+        'stat-events': 'नियोजित कार्यक्रम',
+
+        /* Our Spaces */
+        'spaces-subtitle': 'हमारे स्थान',
+        'spaces-title': 'स्थानों की खोज करें',
+        'venue-itc-desc': 'मुंबई में लक्जरी 5-सितारा स्थान',
+        'venue-taj-desc': 'प्रीमियम आधुनिक विलासिता',
+        'venue-sahara-desc': 'प्रतिष्ठित गुंबद वास्तुकला',
+        'venue-westin-desc': 'मंजमदार झील के दृश्य',
+        'venue-radisson-desc': 'आधुनिक प्रीमियम कार्यक्रम',
+        'venue-nesco-desc': 'बड़े पैमाने पर आयोजन स्थल',
+        'venue-marriott-desc': 'आधुनिक व्यापार और शादियाँ',
+        'venue-orchid-desc': 'इको-लक्जरी उत्कृष्टता',
+        'venue-hilton-desc': 'शानदार विरासत शैली',
+        'venue-view-all': 'सभी स्थान देखें',
+
+        /* Testimonials */
+        'testi-subtitle': 'हमारे परिवारों के शब्द',
+        'testi-title': 'कहानियाँ जो हमेशा याद रहती हैं',
+        'testi-1-text': 'अमोर इवेंट्स ने हमारी सपनों की शादी को उस चीज़ में बदल दिया जिसकी हमने कल्पना भी नहीं की थी। हर फूल, हर रोशनी, हर पल — पूर्णता।',
+        'testi-1-author': 'प्रिया और अर्जुन शाह',
+        'testi-1-meta': 'शादी · मार्च 2024',
+        'testi-2-text': 'ग्रैंड बॉलरूम लुभावना था। जैसे ही हमने कदम रखा, हमें पता चला कि यही वह जगह है। टीम ने सब कुछ संभाला — हमने बस जश्न मनाया।',
+        'testi-2-author': 'मीरा और राहुल कपूर',
+        'testi-2-meta': 'रिसेप्शन · नवंबर 2023',
+        'testi-3-text': 'पेशेवर, मिलनसार और बिल्कुल विस्तार-उन्मुख। हमारा कॉर्पोरेट गाला त्रुटिहीन रूप से निष्पादित किया गया था। एवी सेटअप और खानपान उम्मीदों से अधिक था।',
+        'testi-3-author': 'स्नेहा देसाई',
+        'testi-3-meta': 'कॉर्पोरेट गाला · जनवरी 2024',
+        'review-stats': 'गूगल रिव्यू पर 4.9 / 5 रेटिंग · 120+ सत्यापित समीक्षाएं',
+        'read-reviews': 'सभी समीक्षाएं पढ़ें →',
+
+        /* Boutique Footer */
+        'footer-tagline': 'प्यार और लालित्य के साथ उत्सव तैयार करना।',
+        'footer-book': 'स्थान बुक करें',
+        'footer-email': 'हमें ईमेल करें',
+        'footer-linkedin': 'लिंक्डइन',
+        'footer-x': 'एक्स',
+        'footer-privacy': 'गोपनीयता नीति',
+        'footer-terms': 'नियम और शर्तें',
+        'footer-collection': 'संग्रह विवरण',
+        'footer-cookies': 'कुकी सेटिंग्स',
+        'footer-copyright': 'कॉपीराइट © अमोर इवेंट्स लिमिटेड 2025',
+        'footer-news-text': 'क्यूरेटेड इवेंट प्रेरणा और स्थान अंतर्दृष्टि प्राप्त करें जो आपको कहीं और नहीं मिलेगी, सीधे आपके इनबॉक्स में।',
+        'footer-first-name': 'पहला नाम*',
+        'footer-last-name': 'अंतिम नाम*',
+        'footer-email-field': 'ईमेल*',
+        'footer-subscribe': 'सब्सक्राइब करें'
+    }
+};
+
+export default translations;

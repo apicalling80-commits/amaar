@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Storytelling | Amor Eventz Gallery</title>
+
+    <!-- Fonts Overhaul -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <meta name="description"
+        content="Witness the magic of Amor Eventz. A curated gallery of royal weddings, grand corporate galas, and bespoke event decor.">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="gallery-page">
+
+    <!-- NAVBAR -->
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="assets/logo.png" alt="Amor Eventz"
+                        style="height: 75px; width: auto;"></a>
+            </div>
+            <div class="nav-right-group">
+                <div class="nav-actions">
+                    <a href="contact.html" class="nav-btn" data-i18n="nav-reserve">RESERVE NOW</a>
+                </div>
+                <div class="lang-switcher">
+                    <span class="lang-btn active" data-lang="en">EN</span>
+                    <span class="lang-divider"></span>
+                    <span class="lang-btn" data-lang="hi">HI</span>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="nav-home">HOME</a></li>
+                    <li><a href="about.html" data-i18n="nav-about">ABOUT</a></li>
+                    <li><a href="venues.html" data-i18n="nav-venues">VENUES</a></li>
+                    <li><a href="services.html" data-i18n="nav-services">SERVICES</a></li>
+                    <li><a href="gallery.html" class="active" data-i18n="nav-gallery">GALLERY</a></li>
+                    <li><a href="contact.html" data-i18n="nav-contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- NEW GALLERY HERO (FLOWBLOX STYLE) -->
+    <header class="gallery-hero-new">
+        <div class="container reveal">
+            <h1 class="txt-hero" data-i18n="gallery-hero-title">The Art of Celebration</h1>
+            <p class="txt-body" data-i18n="gallery-hero-subtitle">A cinematic collection of our most prestigious work.
+            </p>
+
+        </div>
+
+        <div class="wrapper reveal delay-1">
+            <div class="inner" style="--quantity: 20;">
+                <div class="card" style="--index: 0; --color-card: 179, 146, 68;">
+                    <div class="img"><img src="assets/hero (1).jpg" alt="Amor 1"></div>
+                </div>
+                <div class="card" style="--index: 1; --color-card: 179, 146, 68;">
+                    <div class="img"><img src="assets/hero (2).jpg" alt="Amor 2"></div>
+                </div>
+                <div class="card" style="--index: 2; --color-card: 179, 146, 68;">
+                    <div class="img"><img src="assets/hero (3).jpg" alt="Amor 3"></div>
+                </div>
+                <div class="card" style="--index: 3; --color-card: 179, 146, 68;">
+                    <div class="img"><img src="assets/hero (4).jpg" alt="Amor 4"></div>
+                </div>
+                <div class="card" style="--index: 4; --color-card: 179, 146, 68;">
+                    <div class="img"><img src="assets/hero (5).jpg" alt="Amor 5"></div>
+                </div>
+                <div class="card" style="--index: 5; --color-card: 179, 146, 68;">
+                    <div class="img"><img src="assets/luxury-wedding-stage-decoration.jpg" alt="Amor 6"></div>
+                </div>
+                <div class="card" style="--index: 6; --color-card: 179, 146, 68;">
+                    <div class="img"><img src="assets/indian-stage-with-neon-light-night.jpg" alt="Amor 7"></div>
+                </div>
+                <div class="card" style="--index: 7; --color-card: 179, 146, 68;">
+                    <div class="img"><img src="assets/catering-wedding.jpg" alt="Amor 8"></div>
+                </div>
+                <div class="card" style="--index: 8; --color-card: 179, 146, 68;">
+                    <div class="img"><img src="assets/haldi-background-indian-wedding-time-haldi-ceremony.jpg"
+                            alt="Amor 9"></div>
+                </div>
+                <div class="card" style="--index: 9; --color-card: 179, 146, 68;">
+                    <div class="img"><img
+                            src="assets/birthday-celebratory-toast-with-string-lights-champagne-silhouettes.jpg"
+                            alt="Amor 10"></div>
+                </div>
+                <!-- EXTENDED SLOTS -->
+                <div class="card" style="--index: 10; --color-card: 179, 146, 68;">
+                    <div class="img"><img src="assets/hero (1).jpg" alt="Amor 11"></div>
+                </div>
+                <div class="card" style="--index: 11; --color-card: 179, 146, 68;">
+                    <div class="img"><img src="assets/hero (2).jpg" alt="Amor 12"></div>
+                </div>
+                <div class="card" style="--index: 12; --color-card: 179, 146, 68;">
+                    <div class="img"><img src="assets/hero (3).jpg" alt="Amor 13"></div>
+                </div>
+                <div class="card" style="--index: 13; --color-card: 179, 146, 68;">
+                    <div class="img"><img src="assets/hero (4).jpg" alt="Amor 14"></div>
+                </div>
+                <div class="card" style="--index: 14; --color-card: 179, 146, 68;">
+                    <div class="img"><img src="assets/hero (5).jpg" alt="Amor 15"></div>
+                </div>
+                <div class="card" style="--index: 15; --color-card: 179, 146, 68;">
+                    <div class="img"><img src="assets/luxury-wedding-stage-decoration.jpg" alt="Amor 16"></div>
+                </div>
+                <div class="card" style="--index: 16; --color-card: 179, 146, 68;">
+                    <div class="img"><img src="assets/indian-stage-with-neon-light-night.jpg" alt="Amor 17"></div>
+                </div>
+                <div class="card" style="--index: 17; --color-card: 179, 146, 68;">
+                    <div class="img"><img src="assets/catering-wedding.jpg" alt="Amor 18"></div>
+                </div>
+                <div class="card" style="--index: 18; --color-card: 179, 146, 68;">
+                    <div class="img"><img src="assets/haldi-background-indian-wedding-time-haldi-ceremony.jpg"
+                            alt="Amor 19"></div>
+                </div>
+                <div class="card" style="--index: 19; --color-card: 179, 146, 68;">
+                    <div class="img"><img
+                            src="assets/birthday-celebratory-toast-with-string-lights-champagne-silhouettes.jpg"
+                            alt="Amor 20"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOSAIC GRID -->
+    <section class="section-light" style="padding:0">
+        <div class="container gallery-mosaic">
+            <div class="gallery-item span-2 row-2 reveal" data-category="WEDDINGS">
+                <img src="assets/luxury-wedding-stage-decoration.jpg" alt="Wedding Hall">
+            </div>
+            <div class="gallery-item reveal delay-1" data-category="WEDDINGS">
+                <img src="assets/haldi-background-indian-wedding-time-haldi-ceremony.jpg" alt="Decor Detail">
+            </div>
+            <div class="gallery-item reveal delay-2" data-category="CORPORATE">
+                <img src="assets/birthday-celebratory-toast-with-string-lights-champagne-silhouettes.jpg"
+                    alt="Gala Setup">
+            </div>
+            <div class="gallery-item row-2 reveal delay-3" data-category="DECOR">
+                <img src="assets/indian-stage-with-neon-light-night.jpg" alt="Arched Entrance">
+            </div>
+            <div class="gallery-item reveal delay-1" data-category="CULINARY">
+                <img src="assets/catering-wedding.jpg" alt="Catering Spread">
+            </div>
+            <div class="gallery-item span-2 reveal delay-2" data-category="DECOR">
+                <img src="assets/multi-colored-art-crafts.jpg" alt="Outdoor View">
+            </div>
+            <div class="gallery-item reveal" data-category="DECOR">
+                <img src="assets/photo-is-must-everyday-work-ai-generated-best-wonderful-photo.jpg"
+                    alt="Interior Details">
+            </div>
+            <div class="gallery-item reveal delay-1" data-category="CORPORATE">
+                <img src="assets/hero (3).jpg" alt="Lounge Area">
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════
+         VIDEO HIGHLIGHTS SECTION
+    ════════════════════════════════════════════════ -->
+    <section class="video-gallery-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="vg-header reveal">
+                <svg class="vg-divider" viewBox="0 0 320 20" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="10" x2="130" y2="10" stroke="#b03055" stroke-width="0.5"/>
+                    <polygon points="143,10 150,5 157,10 150,15" fill="#b03055" opacity="0.8"/>
+                    <circle cx="160" cy="10" r="3" fill="#b03055"/>
+                    <polygon points="163,10 170,5 177,10 170,15" fill="#b03055" opacity="0.8"/>
+                    <line x1="190" y1="10" x2="320" y2="10" stroke="#b03055" stroke-width="0.5"/>
+                </svg>
+                <p class="vg-label">CINEMATIC MOMENTS</p>
+                <h2 class="vg-title">Behind the Magic</h2>
+                <p class="vg-sub">Raw, real moments captured at our finest events — hover to preview, click to watch.</p>
+            </div>
+
+            <!-- Video Grid -->
+            <div class="vg-grid" id="videoGrid">
+
+                <div class="vg-card reveal" data-src="assets/video-clips/IMG_5029-clip.mp4" data-thumb="assets/video-thumbs/IMG_5029-clip.jpg" data-label="Grand Celebration">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Grand Celebration</p>
+                </div>
+
+                <div class="vg-card reveal delay-1" data-src="assets/video-clips/PXL_20251129_135544285.NS-02.MAIN-clip.mp4" data-thumb="assets/video-thumbs/PXL_20251129_135544285.NS-02.MAIN-clip.jpg" data-label="Event Highlights">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Event Highlights</p>
+                </div>
+
+                <div class="vg-card reveal delay-2" data-src="assets/video-clips/PXL_20251130_152447351-clip.mp4" data-thumb="assets/video-thumbs/PXL_20251130_152447351-clip.jpg" data-label="Venue Moments">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Venue Moments</p>
+                </div>
+
+                <div class="vg-card reveal delay-3" data-src="assets/video-clips/PXL_20251130_152552094.NS-02.MAIN-clip.mp4" data-thumb="assets/video-thumbs/PXL_20251130_152552094.NS-02.MAIN-clip.jpg" data-label="Decor Showcase">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Decor Showcase</p>
+                </div>
+
+                <div class="vg-card reveal" data-src="assets/video-clips/PXL_20251205_040224350-clip.mp4" data-thumb="assets/video-thumbs/PXL_20251205_040224350-clip.jpg" data-label="Stage Setup">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Stage Setup</p>
+                </div>
+
+                <div class="vg-card reveal delay-1" data-src="assets/video-clips/PXL_20251205_041827748-clip.mp4" data-thumb="assets/video-thumbs/PXL_20251205_041827748-clip.jpg" data-label="Evening Gala">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Evening Gala</p>
+                </div>
+
+                <div class="vg-card reveal delay-2" data-src="assets/video-clips/PXL_20251212_125016485.NS-02.MAIN-clip.mp4" data-thumb="assets/video-thumbs/PXL_20251212_125016485.NS-02.MAIN-clip.jpg" data-label="Royal Wedding">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Royal Wedding</p>
+                </div>
+
+                <div class="vg-card reveal delay-3" data-src="assets/video-clips/PXL_20251215_022334056-clip.mp4" data-thumb="assets/video-thumbs/PXL_20251215_022334056-clip.jpg" data-label="Festive Decor">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Festive Decor</p>
+                </div>
+
+                <div class="vg-card reveal" data-src="assets/video-clips/VID-20250829-WA0012-clip.mp4" data-thumb="assets/video-thumbs/VID-20250829-WA0012-clip.jpg" data-label="Special Moment">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Special Moment</p>
+                </div>
+
+                <div class="vg-card reveal delay-1" data-src="assets/video-clips/VID-20250829-WA0013-clip.mp4" data-thumb="assets/video-thumbs/VID-20250829-WA0013-clip.jpg" data-label="Bridal Story">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Bridal Story</p>
+                </div>
+
+                <div class="vg-card reveal delay-2" data-src="assets/video-clips/VID-20250829-WA0014-clip.mp4" data-thumb="assets/video-thumbs/VID-20250829-WA0014-clip.jpg" data-label="Ceremony Elegance">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Ceremony Elegance</p>
+                </div>
+
+                <div class="vg-card reveal delay-3" data-src="assets/video-clips/VID-20250829-WA0015-clip.mp4" data-thumb="assets/video-thumbs/VID-20250829-WA0015-clip.jpg" data-label="Floral Grandeur">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Floral Grandeur</p>
+                </div>
+
+                <div class="vg-card reveal" data-src="assets/video-clips/VID-20250829-WA0016-clip.mp4" data-thumb="assets/video-thumbs/VID-20250829-WA0016-clip.jpg" data-label="Night Celebrations">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Night Celebrations</p>
+                </div>
+
+                <div class="vg-card reveal delay-1" data-src="assets/video-clips/VID-20250829-WA0017-clip.mp4" data-thumb="assets/video-thumbs/VID-20250829-WA0017-clip.jpg" data-label="Mandap Decor">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Mandap Decor</p>
+                </div>
+
+                <div class="vg-card reveal delay-2" data-src="assets/video-clips/VID-20250829-WA0018-clip.mp4" data-thumb="assets/video-thumbs/VID-20250829-WA0018-clip.jpg" data-label="Reception Hall">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Reception Hall</p>
+                </div>
+
+                <div class="vg-card reveal delay-3" data-src="assets/video-clips/VID-20250829-WA0019-clip.mp4" data-thumb="assets/video-thumbs/VID-20250829-WA0019-clip.jpg" data-label="Sangeet Night">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Sangeet Night</p>
+                </div>
+
+                <div class="vg-card reveal" data-src="assets/video-clips/VID-20250829-WA0020-clip.mp4" data-thumb="assets/video-thumbs/VID-20250829-WA0020-clip.jpg" data-label="Haldi Moments">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Haldi Moments</p>
+                </div>
+
+                <div class="vg-card reveal delay-1" data-src="assets/video-clips/VID-20250829-WA0021-clip.mp4" data-thumb="assets/video-thumbs/VID-20250829-WA0021-clip.jpg" data-label="Mehendi Evening">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Mehendi Evening</p>
+                </div>
+
+                <div class="vg-card reveal delay-2" data-src="assets/video-clips/VID-20250829-WA0022-clip.mp4" data-thumb="assets/video-thumbs/VID-20250829-WA0022-clip.jpg" data-label="Couple Moments">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Couple Moments</p>
+                </div>
+
+                <div class="vg-card reveal delay-3" data-src="assets/video-clips/VID-20250829-WA0023-clip.mp4" data-thumb="assets/video-thumbs/VID-20250829-WA0023-clip.jpg" data-label="Grand Entry">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Grand Entry</p>
+                </div>
+
+                <div class="vg-card reveal" data-src="assets/video-clips/VID-20250831-WA0030-clip.mp4" data-thumb="assets/video-thumbs/VID-20250831-WA0030-clip.jpg" data-label="Lighting Magic">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Lighting Magic</p>
+                </div>
+
+                <div class="vg-card reveal delay-1" data-src="assets/video-clips/VID-20250831-WA0040-clip.mp4" data-thumb="assets/video-thumbs/VID-20250831-WA0040-clip.jpg" data-label="Outdoor Setup">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Outdoor Setup</p>
+                </div>
+
+                <div class="vg-card reveal delay-2" data-src="assets/video-clips/VID-20250924-WA0020-clip.mp4" data-thumb="assets/video-thumbs/VID-20250924-WA0020-clip.jpg" data-label="Anniversary Gala">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Anniversary Gala</p>
+                </div>
+
+                <div class="vg-card reveal delay-3" data-src="assets/video-clips/VID-20251121-WA0000-clip.mp4" data-thumb="assets/video-thumbs/VID-20251121-WA0000-clip.jpg" data-label="Winter Wedding">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Winter Wedding</p>
+                </div>
+
+                <div class="vg-card reveal" data-src="assets/video-clips/VID-20251205-WA0001-clip.mp4" data-thumb="assets/video-thumbs/VID-20251205-WA0001-clip.jpg" data-label="Decor Details">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Decor Details</p>
+                </div>
+
+                <div class="vg-card reveal delay-1" data-src="assets/video-clips/VID-20251208-WA0011-clip.mp4" data-thumb="assets/video-thumbs/VID-20251208-WA0011-clip.jpg" data-label="Royal Entrance">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Royal Entrance</p>
+                </div>
+
+                <div class="vg-card reveal delay-2" data-src="assets/video-clips/VID-20251208-WA0014-clip.mp4" data-thumb="assets/video-thumbs/VID-20251208-WA0014-clip.jpg" data-label="Star Night">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Star Night</p>
+                </div>
+
+                <div class="vg-card reveal delay-3" data-src="assets/video-clips/VID-20260103-WA0106-clip.mp4" data-thumb="assets/video-thumbs/VID-20260103-WA0106-clip.jpg" data-label="New Year Special">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">New Year Special</p>
+                </div>
+
+                <div class="vg-card reveal" data-src="assets/video-clips/VID-20260103-WA0108-clip.mp4" data-thumb="assets/video-thumbs/VID-20260103-WA0108-clip.jpg" data-label="Celebration Vibes">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Celebration Vibes</p>
+                </div>
+
+                <div class="vg-card reveal delay-1" data-src="assets/video-clips/VID-20260104-WA0001-clip.mp4" data-thumb="assets/video-thumbs/VID-20260104-WA0001-clip.jpg" data-label="Intimate Evening">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Intimate Evening</p>
+                </div>
+
+                <div class="vg-card reveal delay-2" data-src="assets/video-clips/VID-20260202-WA0000-clip.mp4" data-thumb="assets/video-thumbs/VID-20260202-WA0000-clip.jpg" data-label="February Fiesta">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">February Fiesta</p>
+                </div>
+
+                <div class="vg-card reveal delay-3" data-src="assets/video-clips/VIDEO-2025-02-04-17-47-29-clip.mp4" data-thumb="assets/video-thumbs/VIDEO-2025-02-04-17-47-29-clip.jpg" data-label="Amor Signature">
+                    <div class="vg-thumb"><div class="vg-play-icon">&#9654;</div><div class="vg-overlay"></div></div>
+                    <p class="vg-cap">Amor Signature</p>
+                </div>
+
+            </div><!-- /vg-grid -->
+        </div>
+    </section>
+
+    <!-- VIDEO LIGHTBOX -->
+    <div class="vg-lightbox" id="vgLightbox" role="dialog" aria-modal="true" aria-label="Video Lightbox">
+        <div class="vg-lb-backdrop" id="vgBackdrop"></div>
+        <div class="vg-lb-box">
+            <button class="vg-lb-close" id="vgClose" aria-label="Close video">&times;</button>
+            <p class="vg-lb-title" id="vgTitle"></p>
+            <video class="vg-lb-video" id="vgVideo" controls playsinline></video>
+        </div>
+    </div>
+
+    <!-- NARRATIVE FOOTER -->
+    <footer class="protocol-footer">
+        <div class="footer-massive-text">
+            <span>Amor Eventz</span>
+        </div>
+        <div class="footer-layout">
+            <div class="footer-left-col">
+                <p class="footer-tagline" data-i18n="footer-tagline">CRAFTING CELEBRATIONS WITH LOVE & ELEGANCE.</p>
+                <div class="footer-pill-links">
+                    <a href="contact.html" class="pill-btn" data-i18n="footer-book">BOOK A VENUE</a>
+                    <a href="mailto:info@amoreventz.com" class="pill-btn" data-i18n="footer-email">EMAIL US</a>
+                    <a href="https://instagram.com/amoreventz" target="_blank" class="pill-btn"
+                        data-i18n="footer-linkedin">LINKEDIN</a>
+                    <a href="https://twitter.com/amoreventz" target="_blank" class="pill-btn" data-i18n="footer-x">X</a>
+                </div>
+                <div class="footer-legal-links">
+                    <a href="#" data-i18n="footer-privacy">PRIVACY POLICY</a>
+                    <a href="#" data-i18n="footer-terms">TERMS AND CONDITIONS</a>
+                    <a href="#" data-i18n="footer-collection">COLLECTION STATEMENT</a>
+                    <a href="#" data-i18n="footer-cookies">COOKIE SETTINGS</a>
+                </div>
+                <p class="footer-copyright" data-i18n="footer-copyright">COPYRIGHT © AMOR EVENTZ LIMITED 2025</p>
+            </div>
+
+            <div class="footer-right-col">
+                <p class="newsletter-text" data-i18n="footer-news-text">Get curated event inspiration & venue insights
+                    that you won't find anywhere else, delivered straight to your inbox.</p>
+                <form class="newsletter-form">
+                    <div class="form-row">
+                        <div class="form-group-footer">
+                            <input type="text" placeholder="First name*" data-i18n-placeholder="footer-first-name"
+                                required>
+                        </div>
+                        <div class="form-group-footer">
+                            <input type="text" placeholder="Last name*" data-i18n-placeholder="footer-last-name"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-row form-row-bottom">
+                        <div class="form-group-footer email-group">
+                            <input type="email" placeholder="Email*" data-i18n-placeholder="footer-email-field"
+                                required>
+                        </div>
+                        <button type="submit" class="pill-btn submit-btn"
+                            data-i18n="footer-subscribe">SUBSCRIBE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/917777060321" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
