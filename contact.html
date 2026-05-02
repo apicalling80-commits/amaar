@@ -127,22 +127,22 @@
 
         <!-- FORM PANEL -->
         <div class="contact-form-panel reveal delay-1">
-            <form id="contactForm" action="#">
+            <form id="contactForm" action="https://formspree.io/f/kunmat@amoreventz.com" method="POST">
                 <div class="g-2" style="gap:30px;">
                     <div class="form-group">
                         <label data-i18n="contact-form-name">FULL NAME</label>
-                        <input type="text" placeholder="Your Name" data-i18n-placeholder="contact-ph-name" required>
+                        <input type="text" name="name" placeholder="Your Name" data-i18n-placeholder="contact-ph-name" required>
                     </div>
                     <div class="form-group">
                         <label data-i18n="contact-form-email">EMAIL ADDRESS</label>
-                        <input type="email" placeholder="email@example.com" required>
+                        <input type="email" name="email" placeholder="email@example.com" required>
                     </div>
                 </div>
 
                 <div class="g-2" style="gap:30px;">
                     <div class="form-group">
                         <label data-i18n="contact-form-type">EVENT TYPE</label>
-                        <select>
+                        <select name="event_type">
                             <option data-i18n="contact-op-wedding">Wedding</option>
                             <option data-i18n="contact-op-gala">Corporate Gala</option>
                             <option data-i18n="contact-op-soiree">Private Soiree</option>
@@ -151,18 +151,18 @@
                     </div>
                     <div class="form-group">
                         <label data-i18n="contact-form-guests">ESTIMATED GUESTS</label>
-                        <input type="number" placeholder="e.g. 200">
+                        <input type="number" name="guests" placeholder="e.g. 200">
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label data-i18n="contact-form-date">PREFERRED DATE</label>
-                    <input type="date">
+                    <input type="date" name="date">
                 </div>
 
                 <div class="form-group">
                     <label data-i18n="contact-form-vision">TELL US ABOUT YOUR VISION</label>
-                    <textarea rows="4" placeholder="How can we make your event legendary?"
+                    <textarea name="vision" rows="4" placeholder="How can we make your event legendary?"
                         data-i18n-placeholder="contact-ph-vision"></textarea>
                 </div>
 
@@ -203,20 +203,20 @@
                 <p class="newsletter-text" data-i18n="footer-news-text">Get curated event inspiration & venue insights
                     that you won't find anywhere
                     else, delivered straight to your inbox.</p>
-                <form class="newsletter-form">
+                <form class="newsletter-form" action="https://formspree.io/f/kunmat@amoreventz.com" method="POST">
                     <div class="form-row">
                         <div class="form-group-footer">
-                            <input type="text" placeholder="First name*" data-i18n-placeholder="footer-first-name"
+                            <input type="text" name="first_name" placeholder="First name*" data-i18n-placeholder="footer-first-name"
                                 required>
                         </div>
                         <div class="form-group-footer">
-                            <input type="text" placeholder="Last name*" data-i18n-placeholder="footer-last-name"
+                            <input type="text" name="last_name" placeholder="Last name*" data-i18n-placeholder="footer-last-name"
                                 required>
                         </div>
                     </div>
                     <div class="form-row form-row-bottom">
                         <div class="form-group-footer email-group">
-                            <input type="email" placeholder="Email*" data-i18n-placeholder="footer-email-field"
+                            <input type="email" name="email" placeholder="Email*" data-i18n-placeholder="footer-email-field"
                                 required>
                         </div>
                         <button type="submit" class="pill-btn submit-btn"
