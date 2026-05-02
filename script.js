@@ -623,7 +623,66 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 7. CONTACT FORM ENHANCEMENT (Native submission enabled)
+    // 7. SEAMLESS AJAX FORM SUBMISSION
+    const handleFormSubmit = (form) => {
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = form.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            
+            // UI Feedback
+            btn.innerHTML = 'SENDING...';
+            btn.disabled = true;
+
+            const formData = new FormData(form);
+            
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    btn.innerHTML = 'SUCCESS ✓';
+                    if (btn.classList.contains('pill-btn')) {
+                        btn.style.backgroundColor = '#28a745';
+                    } else {
+                        btn.style.backgroundColor = '#28a745';
+                        btn.style.borderColor = '#28a745';
+                    }
+                    form.reset();
+                    
+                    setTimeout(() => {
+                        btn.innerHTML = originalText;
+                        btn.disabled = false;
+                        btn.style.backgroundColor = '';
+                        btn.style.borderColor = '';
+                    }, 5000);
+                } else {
+                    throw new Error('Submission failed');
+                }
+            } catch (error) {
+                console.error('Submission error:', error);
+                btn.innerHTML = 'FAILED (TRY AGAIN)';
+                btn.style.backgroundColor = '#dc3545';
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                    btn.style.backgroundColor = '';
+                    btn.style.borderColor = '';
+                }, 3000);
+            }
+        });
+    };
+
+    const cForm = document.getElementById('contactForm');
+    if (cForm) handleFormSubmit(cForm);
+
+    document.querySelectorAll('.newsletter-form').forEach(f => handleFormSubmit(f));
+
 
     // 8. MOBILE MENU TOGGLE
     const menuToggle = document.getElementById('mobile-menu');
