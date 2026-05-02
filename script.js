@@ -198,9 +198,8 @@ const translations = {
         /* Boutique Footer */
         'footer-tagline': 'CRAFTING CELEBRATIONS WITH LOVE & ELEGANCE.',
         'footer-book': 'BOOK A VENUE',
-        'footer-email': 'EMAIL US',
-        'footer-linkedin': 'LINKEDIN',
-        'footer-x': 'X',
+        'footer-instagram': 'INSTAGRAM',
+        'footer-youtube': 'YOUTUBE',
         'footer-privacy': 'PRIVACY POLICY',
         'footer-terms': 'TERMS AND CONDITIONS',
         'footer-collection': 'COLLECTION STATEMENT',
@@ -406,9 +405,8 @@ const translations = {
         /* Boutique Footer */
         'footer-tagline': 'प्यार और लालित्य के साथ उत्सव तैयार करना।',
         'footer-book': 'स्थान बुक करें',
-        'footer-email': 'हमें ईमेल करें',
-        'footer-linkedin': 'लिंक्डइन',
-        'footer-x': 'एक्स',
+        'footer-instagram': 'इंस्टाग्राम',
+        'footer-youtube': 'यूट्यूब',
         'footer-privacy': 'गोपनीयता नीति',
         'footer-terms': 'नियम और शर्तें',
         'footer-collection': 'संग्रह विवरण',
@@ -906,4 +904,138 @@ document.addEventListener('DOMContentLoaded', () => {
             card.style.transform = '';
         });
     });
+})();
+
+/* ============================================================
+   VIDEO SHOWCASE MAGAZINE — Hover autoplay + Lightbox
+   ============================================================ */
+(function initVideoShowcase() {
+    const cards = document.querySelectorAll('.vs-card');
+    if (!cards.length) return;
+
+    const lightbox = document.getElementById('vsLightbox');
+    const lbVideo  = document.getElementById('vsVideo');
+    const lbTitle  = document.getElementById('vsTitle');
+    const lbClose  = document.getElementById('vsClose');
+    const backdrop = document.getElementById('vsBackdrop');
+
+    cards.forEach(card => {
+        const vid = card.querySelector('.vs-vid');
+        const playBtn = card.querySelector('.vs-play');
+
+        // Hover: play muted preview
+        card.addEventListener('mouseenter', () => {
+            if (vid) { 
+                vid.play().catch(() => {}); 
+            }
+        });
+        card.addEventListener('mouseleave', () => {
+            if (vid) { 
+                vid.pause(); 
+                vid.currentTime = 0; 
+            }
+        });
+
+        // Open Lightbox
+        function openLb() {
+            if (!lightbox || !lbVideo) return;
+            const src = card.getAttribute('data-src');
+            const label = card.getAttribute('data-label');
+            
+            lbVideo.src = src || '';
+            lbTitle.textContent = label || '';
+            
+            lightbox.classList.add('open');
+            document.body.classList.add('no-scroll');
+            lbVideo.play().catch(() => {});
+        }
+
+        if (playBtn) playBtn.addEventListener('click', e => { 
+            e.stopPropagation(); 
+            openLb(); 
+        });
+        card.addEventListener('click', openLb);
+
+        // Keyboard a11y
+        card.addEventListener('keydown', e => {
+            if (e.key === 'Enter' || e.key === ' ') { 
+                e.preventDefault(); 
+                openLb(); 
+            }
+        });
+    });
+
+    function closeLb() {
+        if (!lightbox) return;
+        lightbox.classList.remove('open');
+        document.body.classList.remove('no-scroll');
+        if (lbVideo) { 
+            lbVideo.pause(); 
+            lbVideo.src = ''; 
+        }
+    }
+
+    if (lbClose)  lbClose.addEventListener('click', closeLb);
+    if (backdrop) backdrop.addEventListener('click', closeLb);
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && lightbox && lightbox.classList.contains('open')) {
+            closeLb();
+        }
+    });
+})();
+
+/* ============================================================
+   YOUTUBE CINEMATIC SLIDER
+   ============================================================ */
+(function initYouTubeSlider() {
+    const slider = document.getElementById('ytSlider');
+    const slides = document.querySelectorAll('.yt-slide');
+    const nextBtn = document.getElementById('ytNext');
+    const prevBtn = document.getElementById('ytPrev');
+    const dots = document.querySelectorAll('.yt-dot');
+
+    if (!slider || slides.length < 2) return;
+
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+
+    function updateSlider() {
+        // Update transform
+        slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        
+        // Update dots
+        dots.forEach((dot, idx) => {
+            dot.classList.toggle('active', idx === currentIndex);
+        });
+    }
+
+    function goToNext() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlider();
+    }
+
+    function goToPrev() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateSlider();
+    }
+
+    if (nextBtn) nextBtn.addEventListener('click', goToNext);
+    if (prevBtn) prevBtn.addEventListener('click', goToPrev);
+
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            currentIndex = parseInt(dot.getAttribute('data-index'));
+            updateSlider();
+        });
+    });
+
+    // Auto-swipe every 8 seconds (optional)
+    let autoPlay = setInterval(goToNext, 8000);
+
+    // Pause autoPlay on interaction
+    const container = document.querySelector('.yt-slider-container');
+    if (container) {
+        container.addEventListener('mouseenter', () => clearInterval(autoPlay));
+        container.addEventListener('mouseleave', () => autoPlay = setInterval(goToNext, 8000));
+    }
 })();

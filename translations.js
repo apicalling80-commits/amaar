@@ -78,9 +78,8 @@ const translations = {
         /* Boutique Footer */
         'footer-tagline': 'CRAFTING CELEBRATIONS WITH LOVE & ELEGANCE.',
         'footer-book': 'BOOK A VENUE',
-        'footer-email': 'EMAIL US',
-        'footer-linkedin': 'LINKEDIN',
-        'footer-x': 'X',
+        'footer-instagram': 'INSTAGRAM',
+        'footer-youtube': 'YOUTUBE',
         'footer-privacy': 'PRIVACY POLICY',
         'footer-terms': 'TERMS AND CONDITIONS',
         'footer-collection': 'COLLECTION STATEMENT',
@@ -171,9 +170,8 @@ const translations = {
         /* Boutique Footer */
         'footer-tagline': 'प्यार और लालित्य के साथ उत्सव तैयार करना।',
         'footer-book': 'स्थान बुक करें',
-        'footer-email': 'हमें ईमेल करें',
-        'footer-linkedin': 'लिंक्डइन',
-        'footer-x': 'एक्स',
+        'footer-instagram': 'इंस्टाग्राम',
+        'footer-youtube': 'यूट्यूब',
         'footer-privacy': 'गोपनीयता नीति',
         'footer-terms': 'नियम और शर्तें',
         'footer-collection': 'संग्रह विवरण',

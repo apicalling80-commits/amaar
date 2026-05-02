@@ -1815,6 +1815,7 @@ img {
     grid-auto-rows: 300px;
     gap: 20px;
     padding: 80px 0;
+    grid-auto-flow: dense;
 }
 
 .gallery-item {
@@ -4142,4 +4143,597 @@ body.gallery-page .section-light {
 @media (max-width: 480px) {
     .vg-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
     .vg-divider { width: 220px; }
-}
+}
+
+/* ============================================================
+   VIDEO SHOWCASE — MAGAZINE GRID  (.vs-*)
+   ============================================================ */
+
+.vs-section {
+    background: #111010;
+    padding: 90px 0 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* subtle gold radial glow top-center */
+.vs-section::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 300px;
+    background: radial-gradient(ellipse, rgba(179,146,74,0.12) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* ---- Header ------------------------------------------------ */
+.vs-header {
+    max-width: 680px;
+    margin: 0 auto 56px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.vs-eyebrow {
+    display: inline-block;
+    font-family: var(--font-ui);
+    font-size: 10px;
+    letter-spacing: 0.38em;
+    color: #b3924a;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    opacity: 0.9;
+}
+
+.vs-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    font-weight: 500;
+    color: #f5ede0;
+    margin: 0 0 16px;
+    letter-spacing: 0.03em;
+    line-height: 1.15;
+}
+
+.vs-sub {
+    font-family: var(--font-body);
+    font-size: 14.5px;
+    color: rgba(245,237,224,0.45);
+    margin: 0;
+    opacity: 1;
+    letter-spacing: 0.02em;
+    line-height: 1.7;
+}
+
+/* ---- Magazine Grid ----------------------------------------- */
+.vs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    height: 480px;
+}
+
+/* ---- Card Base --------------------------------------------- */
+.vs-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #1c1c1c;
+    border: 1px solid rgba(179,146,74,0.18);
+    transition: border-color 0.4s ease,
+                transform 0.45s cubic-bezier(0.16,1,0.3,1),
+                box-shadow 0.45s ease;
+    outline: none;
+    height: 100%;
+}
+
+.vs-card:hover,
+.vs-card:focus-visible {
+    border-color: rgba(179,146,74,0.65);
+    transform: translateY(-6px);
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.7);
+}
+
+/* ---- Video element ----------------------------------------- */
+.vs-vid {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.55;          /* slightly higher base visibility */
+    transition: opacity 0.55s ease,
+                transform 0.6s cubic-bezier(0.16,1,0.3,1);
+    transform: scale(1.03);
+}
+
+.vs-card:hover .vs-vid,
+.vs-card:focus-visible .vs-vid {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ---- Rich gradient overlay --------------------------------- */
+.vs-grad {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to top,
+            rgba(0,0,0,0.92) 0%,
+            rgba(0,0,0,0.45) 40%,
+            rgba(0,0,0,0.1) 70%),
+        linear-gradient(135deg,
+            rgba(179,146,74,0.1) 0%,
+            transparent 50%);
+    z-index: 1;
+    transition: opacity 0.4s ease;
+}
+
+.vs-card:hover .vs-grad {
+    opacity: 0.7;
+}
+
+/* ---- Play button ------------------------------------------- */
+.vs-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.85);
+    z-index: 4;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(179,146,74,0.6);
+    background: rgba(10,10,10,0.5);
+    color: #b3924a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.4;           /* show slightly as a hint */
+    transition: opacity 0.4s ease,
+                transform 0.4s cubic-bezier(0.16,1,0.3,1),
+                background 0.3s ease,
+                border-color 0.3s ease;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.vs-play svg {
+    width: 22px;
+    height: 22px;
+    margin-left: 3px;
+}
+
+.vs-card:hover .vs-play {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    border-color: #b3924a;
+    background: rgba(179,146,74,0.15);
+}
+
+/* ---- Lightbox ---------------------------------------------- */
+.vs-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.vs-lightbox.open { display: flex; }
+
+.vs-lb-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.94);
+    cursor: pointer;
+}
+
+.vs-lb-box {
+    position: relative;
+    z-index: 1;
+    background: #0e0e0e;
+    border: 1px solid rgba(179,146,74,0.3);
+    border-radius: 8px;
+    width: min(94vw, 1000px);
+    overflow: hidden;
+    animation: vsLbIn 0.45s cubic-bezier(0.16,1,0.3,1);
+}
+
+@keyframes vsLbIn {
+    from { opacity: 0; transform: scale(0.95) translateY(30px); }
+    to   { opacity: 1; transform: scale(1)    translateY(0); }
+}
+
+.vs-lb-close {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    z-index: 2;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.7);
+    border: 1px solid rgba(179,146,74,0.3);
+    color: #f5ede0;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.vs-lb-close:hover { background: #b3924a; color: #0e0e0e; }
+
+.vs-lb-title {
+    font-family: var(--font-ui);
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    color: #b3924a;
+    text-align: center;
+    padding: 18px 70px 14px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.vs-lb-video {
+    width: 100%;
+    display: block;
+    max-height: 82vh;
+    background: #000;
+    outline: none;
+}
+
+/* ---- YouTube Slider ---------------------------------------- */
+.yt-slider-section {
+    background: #ffffff; /* pure minimalist white */
+    padding: 120px 0;
+    color: #111;
+    position: relative;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.yt-header {
+    margin-bottom: 60px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.yt-eyebrow {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #f4f4f4;
+    color: #888;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    border-radius: 50px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.yt-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: #111;
+    margin: 0;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.yt-slider-container {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0;
+    overflow: visible; /* allow shadow to breathe */
+}
+
+.yt-slider-viewport {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 24px; /* matching card radius for clean clip */
+}
+
+.yt-slider {
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.yt-slide {
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.yt-video-card {
+    position: relative;
+    display: flex; /* flex for overlay alignment */
+    flex-direction: column;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    min-height: 200px; /* safety fallback */
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.15);
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.yt-overlay {
+    flex: 1;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, transparent 40%, transparent 60%, rgba(0,0,0,0.7) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: clamp(20px, 4vw, 40px);
+}
+
+.yt-top-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.yt-channel-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #b3924a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+.yt-text-stack {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.yt-vid-name {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 450px;
+    letter-spacing: 0.01em;
+}
+
+.yt-chan-name {
+    color: rgba(255,255,255,0.9);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.yt-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 72px;
+    height: 52px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* NO HOVER SCALE ON PLAY BUTTON */
+.yt-video-card:hover .yt-play-btn {
+    transform: translate(-50%, -50%);
+}
+
+.yt-play-btn svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+}
+
+.yt-watch-brand {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 13px;
+    background: rgba(0,0,0,0.5);
+    padding: 8px 16px;
+    border-radius: 6px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.yt-watch-brand svg {
+    height: 20px;
+}
+
+.yt-video-card iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+/* Nav buttons - Premium floating style */
+.yt-nav {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    right: -30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.yt-nav-btn {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #fff;
+    color: #111;
+    border: 1px solid #eee;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.yt-nav-btn:hover {
+    background: #111;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.yt-nav-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Dots */
+.yt-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.yt-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.yt-dot.active {
+    background: #b3924a;
+    transform: scale(1.3);
+}
+
+@media (max-width: 768px) {
+    .yt-slider-section { padding: 40px 0; }
+    .yt-nav { display: none; } /* hide arrows on mobile, use dots/swipe */
+    .yt-video-card { 
+        border-radius: 12px;
+        min-height: 180px; 
+    }
+
+    .yt-overlay {
+        padding: 16px !important;
+    }
+
+    .yt-top-info {
+        gap: 10px !important;
+    }
+
+    .yt-channel-avatar {
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 1rem !important;
+    }
+
+    .yt-vid-name {
+        font-size: 14px !important;
+        white-space: normal !important;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        max-width: 100% !important;
+        line-height: 1.2 !important;
+    }
+
+    .yt-chan-name {
+        font-size: 11px !important;
+    }
+
+    .yt-play-btn {
+        width: 50px !important;
+        height: 36px !important;
+    }
+
+    .yt-watch-brand {
+        padding: 6px 12px !important;
+        font-size: 11px !important;
+    }
+
+    .yt-watch-brand svg {
+        height: 16px !important;
+    }
+
+    /* Video Showcase Mobile Fix */
+    .vs-grid {
+        grid-template-columns: 1fr !important;
+        height: auto !important;
+        padding: 0 20px !important;
+        gap: 20px !important;
+    }
+
+    .vs-card {
+        height: 380px !important;
+        transform: none !important; /* No hover lift on mobile */
+    }
+
+    .vs-card:hover {
+        transform: none !important;
+    }
+
+    .vs-header {
+        padding: 0 20px;
+        margin-bottom: 32px;
+    }
+
+    .vs-title {
+        font-size: 2.2rem !important;
+        margin-bottom: 12px !important;
+    }
+
+    .vs-sub {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+        padding: 0 10px;
+    }
+
+    .vs-eyebrow {
+        font-size: 11px !important;
+        margin-bottom: 12px !important;
+    }
+}
+
+
+
+
