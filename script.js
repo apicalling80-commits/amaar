@@ -623,30 +623,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 7. CONTACT FORM ENHANCEMENT
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const btn = contactForm.querySelector('button[type="submit"]');
-            const originalText = btn.innerHTML;
-            
-            btn.innerHTML = 'SENDING...';
-            btn.disabled = true;
-
-            setTimeout(() => {
-                btn.innerHTML = 'ENQUIRY SENT ✓';
-                btn.style.backgroundColor = '#28a745';
-                contactForm.reset();
-                
-                setTimeout(() => {
-                    btn.innerHTML = originalText;
-                    btn.disabled = false;
-                    btn.style.backgroundColor = '';
-                }, 3000);
-            }, 1500);
-        });
-    }
+    // 7. CONTACT FORM ENHANCEMENT (Native submission enabled)
 
     // 8. MOBILE MENU TOGGLE
     const menuToggle = document.getElementById('mobile-menu');
