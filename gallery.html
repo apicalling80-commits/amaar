@@ -246,7 +246,7 @@
                  data-label="Grand Celebration"
                  tabindex="0" aria-label="Play Grand Celebration">
                 <video class="vs-vid" src="assets/videos/video-01.mp4"
-                       loop muted playsinline preload="metadata"></video>
+                       autoplay muted loop playsinline preload="auto"></video>
                 <div class="vs-grad"></div>
                 <button class="vs-play" aria-label="Play">
                     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
@@ -259,7 +259,7 @@
                  data-label="Sangeet Night"
                  tabindex="0" aria-label="Play Sangeet Night">
                 <video class="vs-vid" src="assets/videos/video-02.mp4"
-                       loop muted playsinline preload="metadata"></video>
+                       autoplay muted loop playsinline preload="auto"></video>
                 <div class="vs-grad"></div>
                 <button class="vs-play" aria-label="Play">
                     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
@@ -272,7 +272,7 @@
                  data-label="February Fiesta"
                  tabindex="0" aria-label="Play February Fiesta">
                 <video class="vs-vid" src="assets/videos/video-03.mp4"
-                       loop muted playsinline preload="metadata"></video>
+                       autoplay muted loop playsinline preload="auto"></video>
                 <div class="vs-grad"></div>
                 <button class="vs-play" aria-label="Play">
                     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
@@ -281,6 +281,16 @@
 
         </div>
     </section>
+
+    <!-- VIDEO LIGHTBOX -->
+    <div class="vs-lightbox" id="vsLightbox" role="dialog" aria-modal="true" aria-label="Video Lightbox">
+        <div class="vs-lb-backdrop" id="vsBackdrop"></div>
+        <div class="vs-lb-box">
+            <button class="vs-lb-close" id="vsClose" aria-label="Close video">&times;</button>
+            <p class="vs-lb-title" id="vsTitle"></p>
+            <video class="vs-lb-video" id="vsVideo" controls playsinline></video>
+        </div>
+    </div>
 
     <!-- ═══════════════════════════════════════════════
          YOUTUBE CINEMATIC SLIDER

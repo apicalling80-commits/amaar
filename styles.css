@@ -4307,17 +4307,17 @@ body.gallery-page .section-light {
     -webkit-backdrop-filter: blur(6px);
 }
 
-.vs-play svg {
-    width: 22px;
-    height: 22px;
-    margin-left: 3px;
-}
-
-.vs-card:hover .vs-play {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
+.vs-play:hover {
     border-color: #b3924a;
     background: rgba(179,146,74,0.15);
+    opacity: 1 !important;
+    transform: translate(-50%, -50%) scale(1.05) !important;
+}
+
+.vs-play svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
 }
 
 /* ---- Lightbox ---------------------------------------------- */
