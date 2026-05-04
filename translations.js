@@ -1,4 +1,4 @@
-const translations = {
+var translations = {
     'en': {
         'nav-home': 'HOME',
         'nav-about': 'ABOUT',
@@ -49,14 +49,23 @@ const translations = {
         /* Our Spaces */
         'spaces-subtitle': 'OUR SPACES',
         'spaces-title': 'Discover the Venues',
+        'venue-itc-title': 'ITC Grand Central',
         'venue-itc-desc': 'Luxury 5-star venue in Mumbai',
+        'venue-taj-title': 'Taj Santacruz',
         'venue-taj-desc': 'Premium modern luxury',
+        'venue-sahara-title': 'Sahara Star',
         'venue-sahara-desc': 'Iconic dome architecture',
+        'venue-westin-title': 'The Westin Mumbai',
         'venue-westin-desc': 'Scenic lake views',
+        'venue-radisson-title': 'Radisson Blu',
         'venue-radisson-desc': 'Modern premium events',
+        'venue-nesco-title': 'NESCO Centre',
         'venue-nesco-desc': 'Large-scale event space',
+        'venue-marriott-title': 'Courtyard by Marriott',
         'venue-marriott-desc': 'Modern business & weddings',
+        'venue-orchid-title': 'The Orchid Hotel',
         'venue-orchid-desc': 'Eco-luxury excellence',
+        'venue-hilton-title': 'Hilton Mumbai',
         'venue-hilton-desc': 'Elegant heritage style',
         'venue-view-all': 'VIEW ALL VENUES',
 
@@ -130,6 +139,7 @@ const translations = {
         'gallery-vs-subtitle': 'Real events, real emotions — watch the magic we create.',
         'gallery-yt-eyebrow': 'Watch Our Story',
         'gallery-yt-title': 'Experience Our Magic',
+        'gallery-yt-subtitle': 'Watch our cinematic stories unfold.',
 
         /* Venue Catalog Specifics */
         'venue-catalog-subtitle': 'EXCLUSIVE SELECTION',
@@ -195,14 +205,23 @@ const translations = {
         /* Our Spaces */
         'spaces-subtitle': 'हमारे स्थान',
         'spaces-title': 'स्थानों की खोज करें',
+        'venue-itc-title': 'आईटीसी ग्रैंड सेंट्रल',
         'venue-itc-desc': 'मुंबई में लक्जरी 5-सितारा स्थान',
+        'venue-taj-title': 'ताज सांताक्रूज',
         'venue-taj-desc': 'प्रीमियम आधुनिक विलासिता',
+        'venue-sahara-title': 'सहारा स्टार',
         'venue-sahara-desc': 'प्रतिष्ठित गुंबद वास्तुकला',
+        'venue-westin-title': 'द वेस्टिन मुंबई',
         'venue-westin-desc': 'मंजमदार झील के दृश्य',
+        'venue-radisson-title': 'रेडिसन ब्लू',
         'venue-radisson-desc': 'आधुनिक प्रीमियम कार्यक्रम',
+        'venue-nesco-title': 'नेस्को केंद्र',
         'venue-nesco-desc': 'बड़े पैमाने पर आयोजन स्थल',
+        'venue-marriott-title': 'कोर्टयार्ड बाय मैरियट',
         'venue-marriott-desc': 'आधुनिक व्यापार और शादियाँ',
+        'venue-orchid-title': 'दी ऑर्चीड होटल',
         'venue-orchid-desc': 'इको-लक्जरी उत्कृष्टता',
+        'venue-hilton-title': 'हिल्टन मुंबई',
         'venue-hilton-desc': 'शानदार विरासत शैली',
         'venue-view-all': 'सभी स्थान देखें',
 
@@ -276,6 +295,7 @@ const translations = {
         'gallery-vs-subtitle': 'वास्तविक कार्यक्रम, वास्तविक भावनाएं — हमारे द्वारा बनाए गए जादू को देखें।',
         'gallery-yt-eyebrow': 'हमारी कहानी देखें',
         'gallery-yt-title': 'हमारे जादू का अनुभव करें',
+        'gallery-yt-subtitle': 'हमारी सिनेमाई कहानियों को सामने आते हुए देखें।',
 
         /* Venue Catalog Specifics */
         'venue-catalog-subtitle': 'विशेष चयन',
@@ -293,4 +313,3 @@ const translations = {
     }
 };
 
-export default translations;
